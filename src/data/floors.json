@@ -1,0 +1,50 @@
+[
+  {
+    "id": "main-floor-1",
+    "buildingId": "main-building",
+    "name": "Floor 1 · Administration",
+    "level": 1
+  },
+  {
+    "id": "main-floor-2",
+    "buildingId": "main-building",
+    "name": "Floor 2",
+    "level": 2
+  },
+  {
+    "id": "main-floor-3",
+    "buildingId": "main-building",
+    "name": "Floor 3",
+    "level": 3
+  },
+  {
+    "id": "main-floor-4",
+    "buildingId": "main-building",
+    "name": "Floor 4 · Faculty",
+    "level": 4
+  },
+  {
+    "id": "pab-floor-1",
+    "buildingId": "pab",
+    "name": "Floor 1",
+    "level": 1
+  },
+  {
+    "id": "pab-floor-2",
+    "buildingId": "pab",
+    "name": "Floor 2",
+    "level": 2
+  },
+  {
+    "id": "akian-floor-1",
+    "buildingId": "akian",
+    "name": "Floor 1 · Gallery",
+    "level": 1
+  },
+  {
+    "id": "akian-floor-2",
+    "buildingId": "akian",
+    "name": "Floor 2 · Reading",
+    "level": 2
+  }
+]

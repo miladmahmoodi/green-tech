@@ -1,0 +1,4038 @@
+{
+  "intraday": {
+    "campus": [
+      {
+        "t": "00:00",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "00:15",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "00:30",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "00:45",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "01:00",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "01:15",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "01:30",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "01:45",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "02:00",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "02:15",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "02:30",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "02:45",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "03:00",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "03:15",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "03:30",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "03:45",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "04:00",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "04:15",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "04:30",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "04:45",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "05:00",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "05:15",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "05:30",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "05:45",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "06:00",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "06:15",
+        "solar": 0,
+        "demand": 52.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 52.3,
+        "expected": 54.1,
+        "baseline": 48.1
+      },
+      {
+        "t": "06:30",
+        "solar": 0,
+        "demand": 56.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 56.5,
+        "expected": 58.5,
+        "baseline": 52
+      },
+      {
+        "t": "06:45",
+        "solar": 5.4,
+        "demand": 60.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 60.7,
+        "expected": 62.8,
+        "baseline": 55.8
+      },
+      {
+        "t": "07:00",
+        "solar": 10.7,
+        "demand": 64.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 64.9,
+        "expected": 67.2,
+        "baseline": 59.7
+      },
+      {
+        "t": "07:15",
+        "solar": 16,
+        "demand": 69,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 69,
+        "expected": 71.4,
+        "baseline": 63.5
+      },
+      {
+        "t": "07:30",
+        "solar": 21.2,
+        "demand": 73.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 73.1,
+        "expected": 75.7,
+        "baseline": 67.3
+      },
+      {
+        "t": "07:45",
+        "solar": 26.4,
+        "demand": 77.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 77.1,
+        "expected": 79.8,
+        "baseline": 70.9
+      },
+      {
+        "t": "08:00",
+        "solar": 31.4,
+        "demand": 81,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 81,
+        "expected": 83.8,
+        "baseline": 74.5
+      },
+      {
+        "t": "08:15",
+        "solar": 36.3,
+        "demand": 84.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 84.8,
+        "expected": 87.8,
+        "baseline": 78
+      },
+      {
+        "t": "08:30",
+        "solar": 41,
+        "demand": 88.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 88.4,
+        "expected": 91.5,
+        "baseline": 81.3
+      },
+      {
+        "t": "08:45",
+        "solar": 45.6,
+        "demand": 92,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 92,
+        "expected": 95.2,
+        "baseline": 84.6
+      },
+      {
+        "t": "09:00",
+        "solar": 49.9,
+        "demand": 103.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 103.4,
+        "expected": 107,
+        "baseline": 95.1
+      },
+      {
+        "t": "09:15",
+        "solar": 54.1,
+        "demand": 106.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 106.6,
+        "expected": 110.3,
+        "baseline": 98.1
+      },
+      {
+        "t": "09:30",
+        "solar": 58,
+        "demand": 109.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 109.7,
+        "expected": 113.5,
+        "baseline": 100.9
+      },
+      {
+        "t": "09:45",
+        "solar": 61.7,
+        "demand": 112.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 112.7,
+        "expected": 116.6,
+        "baseline": 103.7
+      },
+      {
+        "t": "10:00",
+        "solar": 65.1,
+        "demand": 115.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 115.4,
+        "expected": 119.4,
+        "baseline": 106.2
+      },
+      {
+        "t": "10:15",
+        "solar": 68.2,
+        "demand": 118,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 118,
+        "expected": 122.1,
+        "baseline": 108.6
+      },
+      {
+        "t": "10:30",
+        "solar": 82,
+        "demand": 124,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 124,
+        "expected": 128.4,
+        "baseline": 116
+      },
+      {
+        "t": "10:45",
+        "solar": 73.5,
+        "demand": 122.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 122.5,
+        "expected": 126.8,
+        "baseline": 112.7
+      },
+      {
+        "t": "11:00",
+        "solar": 75.8,
+        "demand": 124.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 124.5,
+        "expected": 128.9,
+        "baseline": 114.5
+      },
+      {
+        "t": "11:15",
+        "solar": 77.6,
+        "demand": 126.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 126.2,
+        "expected": 130.6,
+        "baseline": 116.1
+      },
+      {
+        "t": "11:30",
+        "solar": 79.2,
+        "demand": 127.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 127.7,
+        "expected": 132.2,
+        "baseline": 117.5
+      },
+      {
+        "t": "11:45",
+        "solar": 80.4,
+        "demand": 129,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 129,
+        "expected": 133.5,
+        "baseline": 118.7
+      },
+      {
+        "t": "12:00",
+        "solar": 81.3,
+        "demand": 130.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 130.1,
+        "expected": 134.7,
+        "baseline": 119.7
+      },
+      {
+        "t": "12:15",
+        "solar": 81.8,
+        "demand": 130.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 130.9,
+        "expected": 135.5,
+        "baseline": 120.4
+      },
+      {
+        "t": "12:30",
+        "solar": 82,
+        "demand": 131.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 131.5,
+        "expected": 136.1,
+        "baseline": 121
+      },
+      {
+        "t": "12:45",
+        "solar": 81.8,
+        "demand": 131.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 131.9,
+        "expected": 136.5,
+        "baseline": 121.3
+      },
+      {
+        "t": "13:00",
+        "solar": 81.3,
+        "demand": 132,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 132,
+        "expected": 136.6,
+        "baseline": 121.4
+      },
+      {
+        "t": "13:15",
+        "solar": 80.4,
+        "demand": 131.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 131.9,
+        "expected": 136.5,
+        "baseline": 121.3
+      },
+      {
+        "t": "13:30",
+        "solar": 79.2,
+        "demand": 131.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 131.5,
+        "expected": 136.1,
+        "baseline": 121
+      },
+      {
+        "t": "13:45",
+        "solar": 77.6,
+        "demand": 130.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 130.9,
+        "expected": 135.5,
+        "baseline": 120.4
+      },
+      {
+        "t": "14:00",
+        "solar": 75.8,
+        "demand": 130.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 130.1,
+        "expected": 134.7,
+        "baseline": 119.7
+      },
+      {
+        "t": "14:15",
+        "solar": 73.5,
+        "demand": 129,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 129,
+        "expected": 133.5,
+        "baseline": 118.7
+      },
+      {
+        "t": "14:30",
+        "solar": 71,
+        "demand": 127.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 127.7,
+        "expected": 132.2,
+        "baseline": 117.5
+      },
+      {
+        "t": "14:45",
+        "solar": 68.2,
+        "demand": 126.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 126.2,
+        "expected": 130.6,
+        "baseline": 116.1
+      },
+      {
+        "t": "15:00",
+        "solar": 65.1,
+        "demand": 124.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 124.5,
+        "expected": 128.9,
+        "baseline": 114.5
+      },
+      {
+        "t": "15:15",
+        "solar": 61.7,
+        "demand": 122.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 122.5,
+        "expected": 126.8,
+        "baseline": 112.7
+      },
+      {
+        "t": "15:30",
+        "solar": 58,
+        "demand": 120.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 120.4,
+        "expected": 124.6,
+        "baseline": 110.8
+      },
+      {
+        "t": "15:45",
+        "solar": 54.1,
+        "demand": 118,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 118,
+        "expected": 122.1,
+        "baseline": 108.6
+      },
+      {
+        "t": "16:00",
+        "solar": 49.9,
+        "demand": 115.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 115.4,
+        "expected": 119.4,
+        "baseline": 106.2
+      },
+      {
+        "t": "16:15",
+        "solar": 45.6,
+        "demand": 104.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 104.7,
+        "expected": 108.4,
+        "baseline": 96.3
+      },
+      {
+        "t": "16:30",
+        "solar": 41,
+        "demand": 101.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 101.7,
+        "expected": 105.3,
+        "baseline": 93.6
+      },
+      {
+        "t": "16:45",
+        "solar": 36.3,
+        "demand": 98.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 98.6,
+        "expected": 102.1,
+        "baseline": 90.7
+      },
+      {
+        "t": "17:00",
+        "solar": 31.4,
+        "demand": 95.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 95.4,
+        "expected": 98.7,
+        "baseline": 87.8
+      },
+      {
+        "t": "17:15",
+        "solar": 26.4,
+        "demand": 92,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 92,
+        "expected": 95.2,
+        "baseline": 84.6
+      },
+      {
+        "t": "17:30",
+        "solar": 21.2,
+        "demand": 88.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 88.4,
+        "expected": 91.5,
+        "baseline": 81.3
+      },
+      {
+        "t": "17:45",
+        "solar": 16,
+        "demand": 84.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 84.8,
+        "expected": 87.8,
+        "baseline": 78
+      },
+      {
+        "t": "18:00",
+        "solar": 10.7,
+        "demand": 81,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 81,
+        "expected": 83.8,
+        "baseline": 74.5
+      },
+      {
+        "t": "18:15",
+        "solar": 5.4,
+        "demand": 77.1,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 77.1,
+        "expected": 79.8,
+        "baseline": 70.9
+      },
+      {
+        "t": "18:30",
+        "solar": 0,
+        "demand": 73.1,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 73.1,
+        "expected": 75.7,
+        "baseline": 67.3
+      },
+      {
+        "t": "18:45",
+        "solar": 0,
+        "demand": 69,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 69,
+        "expected": 71.4,
+        "baseline": 63.5
+      },
+      {
+        "t": "19:00",
+        "solar": 0,
+        "demand": 64.9,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 64.9,
+        "expected": 67.2,
+        "baseline": 59.7
+      },
+      {
+        "t": "19:15",
+        "solar": 0,
+        "demand": 60.7,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 60.7,
+        "expected": 62.8,
+        "baseline": 55.8
+      },
+      {
+        "t": "19:30",
+        "solar": 0,
+        "demand": 56.5,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 56.5,
+        "expected": 58.5,
+        "baseline": 52
+      },
+      {
+        "t": "19:45",
+        "solar": 0,
+        "demand": 52.3,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 52.3,
+        "expected": 54.1,
+        "baseline": 48.1
+      },
+      {
+        "t": "20:00",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "20:15",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "20:30",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "20:45",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "21:00",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "21:15",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "21:30",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "21:45",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "22:00",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "22:15",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "22:30",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "22:45",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "23:00",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "23:15",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "23:30",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      },
+      {
+        "t": "23:45",
+        "solar": 0,
+        "demand": 48,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 48,
+        "expected": 49.7,
+        "baseline": 44.2
+      }
+    ],
+    "main-building": [
+      {
+        "t": "00:00",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "00:15",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "00:30",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "00:45",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "01:00",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "01:15",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "01:30",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "01:45",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "02:00",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "02:15",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "02:30",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "02:45",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "03:00",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "03:15",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "03:30",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "03:45",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "04:00",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "04:15",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "04:30",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "04:45",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "05:00",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "05:15",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "05:30",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "05:45",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "06:00",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "06:15",
+        "solar": 0,
+        "demand": 32.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 32.4,
+        "expected": 33.5,
+        "baseline": 29.8
+      },
+      {
+        "t": "06:30",
+        "solar": 0,
+        "demand": 35,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 35,
+        "expected": 36.3,
+        "baseline": 32.2
+      },
+      {
+        "t": "06:45",
+        "solar": 5.4,
+        "demand": 37.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 37.6,
+        "expected": 38.9,
+        "baseline": 34.6
+      },
+      {
+        "t": "07:00",
+        "solar": 10.7,
+        "demand": 40.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 40.2,
+        "expected": 41.7,
+        "baseline": 37
+      },
+      {
+        "t": "07:15",
+        "solar": 16,
+        "demand": 42.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 42.8,
+        "expected": 44.3,
+        "baseline": 39.4
+      },
+      {
+        "t": "07:30",
+        "solar": 21.2,
+        "demand": 45.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 45.3,
+        "expected": 46.9,
+        "baseline": 41.7
+      },
+      {
+        "t": "07:45",
+        "solar": 26.4,
+        "demand": 47.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 47.8,
+        "expected": 49.5,
+        "baseline": 44
+      },
+      {
+        "t": "08:00",
+        "solar": 31.4,
+        "demand": 50.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 50.2,
+        "expected": 52,
+        "baseline": 46.2
+      },
+      {
+        "t": "08:15",
+        "solar": 36.3,
+        "demand": 52.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 52.6,
+        "expected": 54.4,
+        "baseline": 48.4
+      },
+      {
+        "t": "08:30",
+        "solar": 41,
+        "demand": 54.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 54.8,
+        "expected": 56.7,
+        "baseline": 50.4
+      },
+      {
+        "t": "08:45",
+        "solar": 45.6,
+        "demand": 57,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 57,
+        "expected": 59,
+        "baseline": 52.5
+      },
+      {
+        "t": "09:00",
+        "solar": 49.9,
+        "demand": 64.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 64.1,
+        "expected": 66.3,
+        "baseline": 59
+      },
+      {
+        "t": "09:15",
+        "solar": 54.1,
+        "demand": 66.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 66.1,
+        "expected": 68.4,
+        "baseline": 60.8
+      },
+      {
+        "t": "09:30",
+        "solar": 58,
+        "demand": 68,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 68,
+        "expected": 70.4,
+        "baseline": 62.6
+      },
+      {
+        "t": "09:45",
+        "solar": 61.7,
+        "demand": 69.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 69.9,
+        "expected": 72.3,
+        "baseline": 64.3
+      },
+      {
+        "t": "10:00",
+        "solar": 65.1,
+        "demand": 71.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 71.5,
+        "expected": 74,
+        "baseline": 65.8
+      },
+      {
+        "t": "10:15",
+        "solar": 68.2,
+        "demand": 73.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 73.2,
+        "expected": 75.7,
+        "baseline": 67.3
+      },
+      {
+        "t": "10:30",
+        "solar": 82,
+        "demand": 76.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 76.9,
+        "expected": 79.6,
+        "baseline": 71.9
+      },
+      {
+        "t": "10:45",
+        "solar": 73.5,
+        "demand": 76,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 76,
+        "expected": 78.6,
+        "baseline": 69.9
+      },
+      {
+        "t": "11:00",
+        "solar": 75.8,
+        "demand": 77.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 77.2,
+        "expected": 79.9,
+        "baseline": 71
+      },
+      {
+        "t": "11:15",
+        "solar": 77.6,
+        "demand": 78.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 78.2,
+        "expected": 81,
+        "baseline": 72
+      },
+      {
+        "t": "11:30",
+        "solar": 79.2,
+        "demand": 79.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 79.2,
+        "expected": 82,
+        "baseline": 72.9
+      },
+      {
+        "t": "11:45",
+        "solar": 80.4,
+        "demand": 80,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 80,
+        "expected": 82.8,
+        "baseline": 73.6
+      },
+      {
+        "t": "12:00",
+        "solar": 81.3,
+        "demand": 80.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 80.7,
+        "expected": 83.5,
+        "baseline": 74.2
+      },
+      {
+        "t": "12:15",
+        "solar": 81.8,
+        "demand": 81.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 81.2,
+        "expected": 84,
+        "baseline": 74.6
+      },
+      {
+        "t": "12:30",
+        "solar": 82,
+        "demand": 81.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 81.5,
+        "expected": 84.4,
+        "baseline": 75
+      },
+      {
+        "t": "12:45",
+        "solar": 81.8,
+        "demand": 81.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 81.8,
+        "expected": 84.6,
+        "baseline": 75.2
+      },
+      {
+        "t": "13:00",
+        "solar": 81.3,
+        "demand": 81.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 81.8,
+        "expected": 84.7,
+        "baseline": 75.3
+      },
+      {
+        "t": "13:15",
+        "solar": 80.4,
+        "demand": 81.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 81.8,
+        "expected": 84.6,
+        "baseline": 75.2
+      },
+      {
+        "t": "13:30",
+        "solar": 79.2,
+        "demand": 81.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 81.5,
+        "expected": 84.4,
+        "baseline": 75
+      },
+      {
+        "t": "13:45",
+        "solar": 77.6,
+        "demand": 81.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 81.2,
+        "expected": 84,
+        "baseline": 74.6
+      },
+      {
+        "t": "14:00",
+        "solar": 75.8,
+        "demand": 80.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 80.7,
+        "expected": 83.5,
+        "baseline": 74.2
+      },
+      {
+        "t": "14:15",
+        "solar": 73.5,
+        "demand": 80,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 80,
+        "expected": 82.8,
+        "baseline": 73.6
+      },
+      {
+        "t": "14:30",
+        "solar": 71,
+        "demand": 79.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 79.2,
+        "expected": 82,
+        "baseline": 72.9
+      },
+      {
+        "t": "14:45",
+        "solar": 68.2,
+        "demand": 78.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 78.2,
+        "expected": 81,
+        "baseline": 72
+      },
+      {
+        "t": "15:00",
+        "solar": 65.1,
+        "demand": 77.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 77.2,
+        "expected": 79.9,
+        "baseline": 71
+      },
+      {
+        "t": "15:15",
+        "solar": 61.7,
+        "demand": 76,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 76,
+        "expected": 78.6,
+        "baseline": 69.9
+      },
+      {
+        "t": "15:30",
+        "solar": 58,
+        "demand": 74.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 74.6,
+        "expected": 77.3,
+        "baseline": 68.7
+      },
+      {
+        "t": "15:45",
+        "solar": 54.1,
+        "demand": 73.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 73.2,
+        "expected": 75.7,
+        "baseline": 67.3
+      },
+      {
+        "t": "16:00",
+        "solar": 49.9,
+        "demand": 71.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 71.5,
+        "expected": 74,
+        "baseline": 65.8
+      },
+      {
+        "t": "16:15",
+        "solar": 45.6,
+        "demand": 64.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 64.9,
+        "expected": 67.2,
+        "baseline": 59.7
+      },
+      {
+        "t": "16:30",
+        "solar": 41,
+        "demand": 63.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 63.1,
+        "expected": 65.3,
+        "baseline": 58
+      },
+      {
+        "t": "16:45",
+        "solar": 36.3,
+        "demand": 61.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 61.1,
+        "expected": 63.3,
+        "baseline": 56.2
+      },
+      {
+        "t": "17:00",
+        "solar": 31.4,
+        "demand": 59.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 59.1,
+        "expected": 61.2,
+        "baseline": 54.4
+      },
+      {
+        "t": "17:15",
+        "solar": 26.4,
+        "demand": 57,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 57,
+        "expected": 59,
+        "baseline": 52.5
+      },
+      {
+        "t": "17:30",
+        "solar": 21.2,
+        "demand": 54.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 54.8,
+        "expected": 56.7,
+        "baseline": 50.4
+      },
+      {
+        "t": "17:45",
+        "solar": 16,
+        "demand": 52.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 52.6,
+        "expected": 54.4,
+        "baseline": 48.4
+      },
+      {
+        "t": "18:00",
+        "solar": 10.7,
+        "demand": 50.2,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 50.2,
+        "expected": 52,
+        "baseline": 46.2
+      },
+      {
+        "t": "18:15",
+        "solar": 5.4,
+        "demand": 47.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 47.8,
+        "expected": 49.5,
+        "baseline": 44
+      },
+      {
+        "t": "18:30",
+        "solar": 0,
+        "demand": 45.3,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 45.3,
+        "expected": 46.9,
+        "baseline": 41.7
+      },
+      {
+        "t": "18:45",
+        "solar": 0,
+        "demand": 42.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 42.8,
+        "expected": 44.3,
+        "baseline": 39.4
+      },
+      {
+        "t": "19:00",
+        "solar": 0,
+        "demand": 40.2,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 40.2,
+        "expected": 41.7,
+        "baseline": 37
+      },
+      {
+        "t": "19:15",
+        "solar": 0,
+        "demand": 37.6,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 37.6,
+        "expected": 38.9,
+        "baseline": 34.6
+      },
+      {
+        "t": "19:30",
+        "solar": 0,
+        "demand": 35,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 35,
+        "expected": 36.3,
+        "baseline": 32.2
+      },
+      {
+        "t": "19:45",
+        "solar": 0,
+        "demand": 32.4,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 32.4,
+        "expected": 33.5,
+        "baseline": 29.8
+      },
+      {
+        "t": "20:00",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "20:15",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "20:30",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "20:45",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "21:00",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "21:15",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "21:30",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "21:45",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "22:00",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "22:15",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "22:30",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "22:45",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "23:00",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "23:15",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "23:30",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      },
+      {
+        "t": "23:45",
+        "solar": 0,
+        "demand": 29.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.8,
+        "expected": 30.8,
+        "baseline": 27.4
+      }
+    ],
+    "pab": [
+      {
+        "t": "00:00",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "00:15",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "00:30",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "00:45",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "01:00",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "01:15",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "01:30",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "01:45",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "02:00",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "02:15",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "02:30",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "02:45",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "03:00",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "03:15",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "03:30",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "03:45",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "04:00",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "04:15",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "04:30",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "04:45",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "05:00",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "05:15",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "05:30",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "05:45",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "06:00",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "06:15",
+        "solar": 0,
+        "demand": 13.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 13.6,
+        "expected": 14.1,
+        "baseline": 12.5
+      },
+      {
+        "t": "06:30",
+        "solar": 0,
+        "demand": 14.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 14.7,
+        "expected": 15.2,
+        "baseline": 13.5
+      },
+      {
+        "t": "06:45",
+        "solar": 5.4,
+        "demand": 15.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.8,
+        "expected": 16.3,
+        "baseline": 14.5
+      },
+      {
+        "t": "07:00",
+        "solar": 10.7,
+        "demand": 16.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 16.9,
+        "expected": 17.5,
+        "baseline": 15.5
+      },
+      {
+        "t": "07:15",
+        "solar": 16,
+        "demand": 17.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 17.9,
+        "expected": 18.6,
+        "baseline": 16.5
+      },
+      {
+        "t": "07:30",
+        "solar": 21.2,
+        "demand": 19,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 19,
+        "expected": 19.7,
+        "baseline": 17.5
+      },
+      {
+        "t": "07:45",
+        "solar": 26.4,
+        "demand": 20,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 20,
+        "expected": 20.7,
+        "baseline": 18.4
+      },
+      {
+        "t": "08:00",
+        "solar": 31.4,
+        "demand": 21.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 21.1,
+        "expected": 21.8,
+        "baseline": 19.4
+      },
+      {
+        "t": "08:15",
+        "solar": 36.3,
+        "demand": 22,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 22,
+        "expected": 22.8,
+        "baseline": 20.3
+      },
+      {
+        "t": "08:30",
+        "solar": 41,
+        "demand": 23,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 23,
+        "expected": 23.8,
+        "baseline": 21.1
+      },
+      {
+        "t": "08:45",
+        "solar": 45.6,
+        "demand": 23.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 23.9,
+        "expected": 24.8,
+        "baseline": 22
+      },
+      {
+        "t": "09:00",
+        "solar": 49.9,
+        "demand": 26.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 26.9,
+        "expected": 27.8,
+        "baseline": 24.7
+      },
+      {
+        "t": "09:15",
+        "solar": 54.1,
+        "demand": 27.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 27.7,
+        "expected": 28.7,
+        "baseline": 25.5
+      },
+      {
+        "t": "09:30",
+        "solar": 58,
+        "demand": 28.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 28.5,
+        "expected": 29.5,
+        "baseline": 26.2
+      },
+      {
+        "t": "09:45",
+        "solar": 61.7,
+        "demand": 29.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 29.3,
+        "expected": 30.3,
+        "baseline": 27
+      },
+      {
+        "t": "10:00",
+        "solar": 65.1,
+        "demand": 30,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 30,
+        "expected": 31,
+        "baseline": 27.6
+      },
+      {
+        "t": "10:15",
+        "solar": 68.2,
+        "demand": 30.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 30.7,
+        "expected": 31.7,
+        "baseline": 28.2
+      },
+      {
+        "t": "10:30",
+        "solar": 82,
+        "demand": 32.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 32.2,
+        "expected": 33.4,
+        "baseline": 30.2
+      },
+      {
+        "t": "10:45",
+        "solar": 73.5,
+        "demand": 31.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 31.9,
+        "expected": 33,
+        "baseline": 29.3
+      },
+      {
+        "t": "11:00",
+        "solar": 75.8,
+        "demand": 32.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 32.4,
+        "expected": 33.5,
+        "baseline": 29.8
+      },
+      {
+        "t": "11:15",
+        "solar": 77.6,
+        "demand": 32.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 32.8,
+        "expected": 34,
+        "baseline": 30.2
+      },
+      {
+        "t": "11:30",
+        "solar": 79.2,
+        "demand": 33.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 33.2,
+        "expected": 34.4,
+        "baseline": 30.6
+      },
+      {
+        "t": "11:45",
+        "solar": 80.4,
+        "demand": 33.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 33.5,
+        "expected": 34.7,
+        "baseline": 30.9
+      },
+      {
+        "t": "12:00",
+        "solar": 81.3,
+        "demand": 33.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 33.8,
+        "expected": 35,
+        "baseline": 31.1
+      },
+      {
+        "t": "12:15",
+        "solar": 81.8,
+        "demand": 34,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 34,
+        "expected": 35.2,
+        "baseline": 31.3
+      },
+      {
+        "t": "12:30",
+        "solar": 82,
+        "demand": 34.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 34.2,
+        "expected": 35.4,
+        "baseline": 31.5
+      },
+      {
+        "t": "12:45",
+        "solar": 81.8,
+        "demand": 34.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 34.3,
+        "expected": 35.5,
+        "baseline": 31.5
+      },
+      {
+        "t": "13:00",
+        "solar": 81.3,
+        "demand": 34.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 34.3,
+        "expected": 35.5,
+        "baseline": 31.6
+      },
+      {
+        "t": "13:15",
+        "solar": 80.4,
+        "demand": 34.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 34.3,
+        "expected": 35.5,
+        "baseline": 31.5
+      },
+      {
+        "t": "13:30",
+        "solar": 79.2,
+        "demand": 34.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 34.2,
+        "expected": 35.4,
+        "baseline": 31.5
+      },
+      {
+        "t": "13:45",
+        "solar": 77.6,
+        "demand": 34,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 34,
+        "expected": 35.2,
+        "baseline": 31.3
+      },
+      {
+        "t": "14:00",
+        "solar": 75.8,
+        "demand": 33.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 33.8,
+        "expected": 35,
+        "baseline": 31.1
+      },
+      {
+        "t": "14:15",
+        "solar": 73.5,
+        "demand": 33.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 33.5,
+        "expected": 34.7,
+        "baseline": 30.9
+      },
+      {
+        "t": "14:30",
+        "solar": 71,
+        "demand": 33.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 33.2,
+        "expected": 34.4,
+        "baseline": 30.6
+      },
+      {
+        "t": "14:45",
+        "solar": 68.2,
+        "demand": 32.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 32.8,
+        "expected": 34,
+        "baseline": 30.2
+      },
+      {
+        "t": "15:00",
+        "solar": 65.1,
+        "demand": 32.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 32.4,
+        "expected": 33.5,
+        "baseline": 29.8
+      },
+      {
+        "t": "15:15",
+        "solar": 61.7,
+        "demand": 31.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 31.9,
+        "expected": 33,
+        "baseline": 29.3
+      },
+      {
+        "t": "15:30",
+        "solar": 58,
+        "demand": 31.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 31.3,
+        "expected": 32.4,
+        "baseline": 28.8
+      },
+      {
+        "t": "15:45",
+        "solar": 54.1,
+        "demand": 30.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 30.7,
+        "expected": 31.7,
+        "baseline": 28.2
+      },
+      {
+        "t": "16:00",
+        "solar": 49.9,
+        "demand": 30,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 30,
+        "expected": 31,
+        "baseline": 27.6
+      },
+      {
+        "t": "16:15",
+        "solar": 45.6,
+        "demand": 27.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 27.2,
+        "expected": 28.2,
+        "baseline": 25
+      },
+      {
+        "t": "16:30",
+        "solar": 41,
+        "demand": 26.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 26.4,
+        "expected": 27.4,
+        "baseline": 24.3
+      },
+      {
+        "t": "16:45",
+        "solar": 36.3,
+        "demand": 25.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 25.6,
+        "expected": 26.5,
+        "baseline": 23.6
+      },
+      {
+        "t": "17:00",
+        "solar": 31.4,
+        "demand": 24.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 24.8,
+        "expected": 25.7,
+        "baseline": 22.8
+      },
+      {
+        "t": "17:15",
+        "solar": 26.4,
+        "demand": 23.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 23.9,
+        "expected": 24.8,
+        "baseline": 22
+      },
+      {
+        "t": "17:30",
+        "solar": 21.2,
+        "demand": 23,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 23,
+        "expected": 23.8,
+        "baseline": 21.1
+      },
+      {
+        "t": "17:45",
+        "solar": 16,
+        "demand": 22,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 22,
+        "expected": 22.8,
+        "baseline": 20.3
+      },
+      {
+        "t": "18:00",
+        "solar": 10.7,
+        "demand": 21.1,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 21.1,
+        "expected": 21.8,
+        "baseline": 19.4
+      },
+      {
+        "t": "18:15",
+        "solar": 5.4,
+        "demand": 20,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 20,
+        "expected": 20.7,
+        "baseline": 18.4
+      },
+      {
+        "t": "18:30",
+        "solar": 0,
+        "demand": 19,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 19,
+        "expected": 19.7,
+        "baseline": 17.5
+      },
+      {
+        "t": "18:45",
+        "solar": 0,
+        "demand": 17.9,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 17.9,
+        "expected": 18.6,
+        "baseline": 16.5
+      },
+      {
+        "t": "19:00",
+        "solar": 0,
+        "demand": 16.9,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 16.9,
+        "expected": 17.5,
+        "baseline": 15.5
+      },
+      {
+        "t": "19:15",
+        "solar": 0,
+        "demand": 15.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 15.8,
+        "expected": 16.3,
+        "baseline": 14.5
+      },
+      {
+        "t": "19:30",
+        "solar": 0,
+        "demand": 14.7,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 14.7,
+        "expected": 15.2,
+        "baseline": 13.5
+      },
+      {
+        "t": "19:45",
+        "solar": 0,
+        "demand": 13.6,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 13.6,
+        "expected": 14.1,
+        "baseline": 12.5
+      },
+      {
+        "t": "20:00",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "20:15",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "20:30",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "20:45",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "21:00",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "21:15",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "21:30",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "21:45",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "22:00",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "22:15",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "22:30",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "22:45",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "23:00",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "23:15",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "23:30",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      },
+      {
+        "t": "23:45",
+        "solar": 0,
+        "demand": 12.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.5,
+        "expected": 12.9,
+        "baseline": 11.5
+      }
+    ],
+    "akian": [
+      {
+        "t": "00:00",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "00:15",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "00:30",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "00:45",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "01:00",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "01:15",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "01:30",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "01:45",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "02:00",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "02:15",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "02:30",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "02:45",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "03:00",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "03:15",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "03:30",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "03:45",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "04:00",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "04:15",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "04:30",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "04:45",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "05:00",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "05:15",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "05:30",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "05:45",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "06:00",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "06:15",
+        "solar": 0,
+        "demand": 6.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 6.3,
+        "expected": 6.5,
+        "baseline": 5.8
+      },
+      {
+        "t": "06:30",
+        "solar": 0,
+        "demand": 6.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 6.8,
+        "expected": 7,
+        "baseline": 6.2
+      },
+      {
+        "t": "06:45",
+        "solar": 5.4,
+        "demand": 7.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 7.3,
+        "expected": 7.5,
+        "baseline": 6.7
+      },
+      {
+        "t": "07:00",
+        "solar": 10.7,
+        "demand": 7.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 7.8,
+        "expected": 8.1,
+        "baseline": 7.2
+      },
+      {
+        "t": "07:15",
+        "solar": 16,
+        "demand": 8.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 8.3,
+        "expected": 8.6,
+        "baseline": 7.6
+      },
+      {
+        "t": "07:30",
+        "solar": 21.2,
+        "demand": 8.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 8.8,
+        "expected": 9.1,
+        "baseline": 8.1
+      },
+      {
+        "t": "07:45",
+        "solar": 26.4,
+        "demand": 9.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 9.3,
+        "expected": 9.6,
+        "baseline": 8.5
+      },
+      {
+        "t": "08:00",
+        "solar": 31.4,
+        "demand": 9.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 9.7,
+        "expected": 10.1,
+        "baseline": 8.9
+      },
+      {
+        "t": "08:15",
+        "solar": 36.3,
+        "demand": 10.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 10.2,
+        "expected": 10.5,
+        "baseline": 9.4
+      },
+      {
+        "t": "08:30",
+        "solar": 41,
+        "demand": 10.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 10.6,
+        "expected": 11,
+        "baseline": 9.8
+      },
+      {
+        "t": "08:45",
+        "solar": 45.6,
+        "demand": 11,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 11,
+        "expected": 11.4,
+        "baseline": 10.2
+      },
+      {
+        "t": "09:00",
+        "solar": 49.9,
+        "demand": 12.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.4,
+        "expected": 12.8,
+        "baseline": 11.4
+      },
+      {
+        "t": "09:15",
+        "solar": 54.1,
+        "demand": 12.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.8,
+        "expected": 13.2,
+        "baseline": 11.8
+      },
+      {
+        "t": "09:30",
+        "solar": 58,
+        "demand": 13.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 13.2,
+        "expected": 13.6,
+        "baseline": 12.1
+      },
+      {
+        "t": "09:45",
+        "solar": 61.7,
+        "demand": 13.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 13.5,
+        "expected": 14,
+        "baseline": 12.4
+      },
+      {
+        "t": "10:00",
+        "solar": 65.1,
+        "demand": 13.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 13.8,
+        "expected": 14.3,
+        "baseline": 12.7
+      },
+      {
+        "t": "10:15",
+        "solar": 68.2,
+        "demand": 14.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 14.2,
+        "expected": 14.7,
+        "baseline": 13
+      },
+      {
+        "t": "10:30",
+        "solar": 82,
+        "demand": 14.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 14.9,
+        "expected": 15.4,
+        "baseline": 13.9
+      },
+      {
+        "t": "10:45",
+        "solar": 73.5,
+        "demand": 14.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 14.7,
+        "expected": 15.2,
+        "baseline": 13.5
+      },
+      {
+        "t": "11:00",
+        "solar": 75.8,
+        "demand": 14.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 14.9,
+        "expected": 15.5,
+        "baseline": 13.7
+      },
+      {
+        "t": "11:15",
+        "solar": 77.6,
+        "demand": 15.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.1,
+        "expected": 15.7,
+        "baseline": 13.9
+      },
+      {
+        "t": "11:30",
+        "solar": 79.2,
+        "demand": 15.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.3,
+        "expected": 15.9,
+        "baseline": 14.1
+      },
+      {
+        "t": "11:45",
+        "solar": 80.4,
+        "demand": 15.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.5,
+        "expected": 16,
+        "baseline": 14.2
+      },
+      {
+        "t": "12:00",
+        "solar": 81.3,
+        "demand": 15.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.6,
+        "expected": 16.2,
+        "baseline": 14.4
+      },
+      {
+        "t": "12:15",
+        "solar": 81.8,
+        "demand": 15.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.7,
+        "expected": 16.3,
+        "baseline": 14.4
+      },
+      {
+        "t": "12:30",
+        "solar": 82,
+        "demand": 15.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.8,
+        "expected": 16.3,
+        "baseline": 14.5
+      },
+      {
+        "t": "12:45",
+        "solar": 81.8,
+        "demand": 15.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.8,
+        "expected": 16.4,
+        "baseline": 14.6
+      },
+      {
+        "t": "13:00",
+        "solar": 81.3,
+        "demand": 15.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.8,
+        "expected": 16.4,
+        "baseline": 14.6
+      },
+      {
+        "t": "13:15",
+        "solar": 80.4,
+        "demand": 15.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.8,
+        "expected": 16.4,
+        "baseline": 14.6
+      },
+      {
+        "t": "13:30",
+        "solar": 79.2,
+        "demand": 15.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.8,
+        "expected": 16.3,
+        "baseline": 14.5
+      },
+      {
+        "t": "13:45",
+        "solar": 77.6,
+        "demand": 15.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.7,
+        "expected": 16.3,
+        "baseline": 14.4
+      },
+      {
+        "t": "14:00",
+        "solar": 75.8,
+        "demand": 15.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.6,
+        "expected": 16.2,
+        "baseline": 14.4
+      },
+      {
+        "t": "14:15",
+        "solar": 73.5,
+        "demand": 15.5,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.5,
+        "expected": 16,
+        "baseline": 14.2
+      },
+      {
+        "t": "14:30",
+        "solar": 71,
+        "demand": 15.3,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.3,
+        "expected": 15.9,
+        "baseline": 14.1
+      },
+      {
+        "t": "14:45",
+        "solar": 68.2,
+        "demand": 15.1,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 15.1,
+        "expected": 15.7,
+        "baseline": 13.9
+      },
+      {
+        "t": "15:00",
+        "solar": 65.1,
+        "demand": 14.9,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 14.9,
+        "expected": 15.5,
+        "baseline": 13.7
+      },
+      {
+        "t": "15:15",
+        "solar": 61.7,
+        "demand": 14.7,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 14.7,
+        "expected": 15.2,
+        "baseline": 13.5
+      },
+      {
+        "t": "15:30",
+        "solar": 58,
+        "demand": 14.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 14.4,
+        "expected": 15,
+        "baseline": 13.3
+      },
+      {
+        "t": "15:45",
+        "solar": 54.1,
+        "demand": 14.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 14.2,
+        "expected": 14.7,
+        "baseline": 13
+      },
+      {
+        "t": "16:00",
+        "solar": 49.9,
+        "demand": 13.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 13.8,
+        "expected": 14.3,
+        "baseline": 12.7
+      },
+      {
+        "t": "16:15",
+        "solar": 45.6,
+        "demand": 12.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.6,
+        "expected": 13,
+        "baseline": 11.6
+      },
+      {
+        "t": "16:30",
+        "solar": 41,
+        "demand": 12.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 12.2,
+        "expected": 12.6,
+        "baseline": 11.2
+      },
+      {
+        "t": "16:45",
+        "solar": 36.3,
+        "demand": 11.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 11.8,
+        "expected": 12.3,
+        "baseline": 10.9
+      },
+      {
+        "t": "17:00",
+        "solar": 31.4,
+        "demand": 11.4,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 11.4,
+        "expected": 11.8,
+        "baseline": 10.5
+      },
+      {
+        "t": "17:15",
+        "solar": 26.4,
+        "demand": 11,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 11,
+        "expected": 11.4,
+        "baseline": 10.2
+      },
+      {
+        "t": "17:30",
+        "solar": 21.2,
+        "demand": 10.6,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 10.6,
+        "expected": 11,
+        "baseline": 9.8
+      },
+      {
+        "t": "17:45",
+        "solar": 16,
+        "demand": 10.2,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 10.2,
+        "expected": 10.5,
+        "baseline": 9.4
+      },
+      {
+        "t": "18:00",
+        "solar": 10.7,
+        "demand": 9.7,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 9.7,
+        "expected": 10.1,
+        "baseline": 8.9
+      },
+      {
+        "t": "18:15",
+        "solar": 5.4,
+        "demand": 9.3,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 9.3,
+        "expected": 9.6,
+        "baseline": 8.5
+      },
+      {
+        "t": "18:30",
+        "solar": 0,
+        "demand": 8.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 8.8,
+        "expected": 9.1,
+        "baseline": 8.1
+      },
+      {
+        "t": "18:45",
+        "solar": 0,
+        "demand": 8.3,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 8.3,
+        "expected": 8.6,
+        "baseline": 7.6
+      },
+      {
+        "t": "19:00",
+        "solar": 0,
+        "demand": 7.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 7.8,
+        "expected": 8.1,
+        "baseline": 7.2
+      },
+      {
+        "t": "19:15",
+        "solar": 0,
+        "demand": 7.3,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 7.3,
+        "expected": 7.5,
+        "baseline": 6.7
+      },
+      {
+        "t": "19:30",
+        "solar": 0,
+        "demand": 6.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 6.8,
+        "expected": 7,
+        "baseline": 6.2
+      },
+      {
+        "t": "19:45",
+        "solar": 0,
+        "demand": 6.3,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 6.3,
+        "expected": 6.5,
+        "baseline": 5.8
+      },
+      {
+        "t": "20:00",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "20:15",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "20:30",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "20:45",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.16,
+        "batteryKw": 18,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "21:00",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "21:15",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "21:30",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "21:45",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "22:00",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "22:15",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "22:30",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "22:45",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "23:00",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "23:15",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "23:30",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      },
+      {
+        "t": "23:45",
+        "solar": 0,
+        "demand": 5.8,
+        "price": 0.08,
+        "batteryKw": 0,
+        "actual": 5.8,
+        "expected": 6,
+        "baseline": 5.3
+      }
+    ]
+  },
+  "daily": [
+    {
+      "label": "Sep 28",
+      "kwh": 2208,
+      "cost": 203.14,
+      "solarKwh": 618,
+      "batteryKwh": 132,
+      "savingsUsd": 26.5,
+      "co2Kg": 514,
+      "peakKw": 90
+    },
+    {
+      "label": "Sep 29",
+      "kwh": 2304,
+      "cost": 211.97,
+      "solarKwh": 645,
+      "batteryKwh": 138,
+      "savingsUsd": 27.65,
+      "co2Kg": 537,
+      "peakKw": 96
+    },
+    {
+      "label": "Sep 30",
+      "kwh": 2400,
+      "cost": 220.8,
+      "solarKwh": 672,
+      "batteryKwh": 144,
+      "savingsUsd": 28.8,
+      "co2Kg": 559,
+      "peakKw": 102
+    },
+    {
+      "label": "Oct 1",
+      "kwh": 2232,
+      "cost": 205.34,
+      "solarKwh": 625,
+      "batteryKwh": 134,
+      "savingsUsd": 26.78,
+      "co2Kg": 520,
+      "peakKw": 108
+    },
+    {
+      "label": "Oct 2",
+      "kwh": 2328,
+      "cost": 214.18,
+      "solarKwh": 652,
+      "batteryKwh": 140,
+      "savingsUsd": 27.94,
+      "co2Kg": 542,
+      "peakKw": 114
+    },
+    {
+      "label": "Oct 3",
+      "kwh": 2424,
+      "cost": 223.01,
+      "solarKwh": 679,
+      "batteryKwh": 145,
+      "savingsUsd": 29.09,
+      "co2Kg": 565,
+      "peakKw": 120
+    },
+    {
+      "label": "Oct 4",
+      "kwh": 1284,
+      "cost": 143.2,
+      "solarKwh": 632,
+      "batteryKwh": 135,
+      "savingsUsd": 38.4,
+      "co2Kg": 526,
+      "peakKw": 126
+    }
+  ],
+  "weekly": [
+    {
+      "label": "W36",
+      "kwh": 10856,
+      "cost": 998.75,
+      "solarKwh": 3040,
+      "batteryKwh": 651,
+      "savingsUsd": 130.27,
+      "co2Kg": 2529,
+      "peakKw": 90
+    },
+    {
+      "label": "W37",
+      "kwh": 11328,
+      "cost": 1042.18,
+      "solarKwh": 3172,
+      "batteryKwh": 680,
+      "savingsUsd": 135.94,
+      "co2Kg": 2639,
+      "peakKw": 96
+    },
+    {
+      "label": "W38",
+      "kwh": 11800,
+      "cost": 1085.6,
+      "solarKwh": 3304,
+      "batteryKwh": 708,
+      "savingsUsd": 141.6,
+      "co2Kg": 2749,
+      "peakKw": 102
+    },
+    {
+      "label": "W39",
+      "kwh": 10974,
+      "cost": 1009.61,
+      "solarKwh": 3073,
+      "batteryKwh": 658,
+      "savingsUsd": 131.69,
+      "co2Kg": 2557,
+      "peakKw": 108
+    },
+    {
+      "label": "W40",
+      "kwh": 11446,
+      "cost": 1053.03,
+      "solarKwh": 3205,
+      "batteryKwh": 687,
+      "savingsUsd": 137.35,
+      "co2Kg": 2667,
+      "peakKw": 114
+    }
+  ],
+  "monthly": [
+    {
+      "label": "May",
+      "kwh": 47840,
+      "cost": 4401.28,
+      "solarKwh": 13395,
+      "batteryKwh": 2870,
+      "savingsUsd": 574.08,
+      "co2Kg": 11147,
+      "peakKw": 90
+    },
+    {
+      "label": "Jun",
+      "kwh": 49920,
+      "cost": 4592.64,
+      "solarKwh": 13978,
+      "batteryKwh": 2995,
+      "savingsUsd": 599.04,
+      "co2Kg": 11631,
+      "peakKw": 96
+    },
+    {
+      "label": "Jul",
+      "kwh": 52000,
+      "cost": 4784,
+      "solarKwh": 14560,
+      "batteryKwh": 3120,
+      "savingsUsd": 624,
+      "co2Kg": 12116,
+      "peakKw": 102
+    },
+    {
+      "label": "Aug",
+      "kwh": 48360,
+      "cost": 4449.12,
+      "solarKwh": 13541,
+      "batteryKwh": 2902,
+      "savingsUsd": 580.32,
+      "co2Kg": 11268,
+      "peakKw": 108
+    },
+    {
+      "label": "Sep",
+      "kwh": 50440,
+      "cost": 4640.48,
+      "solarKwh": 14123,
+      "batteryKwh": 3026,
+      "savingsUsd": 605.28,
+      "co2Kg": 11753,
+      "peakKw": 114
+    },
+    {
+      "label": "Oct",
+      "kwh": 52520,
+      "cost": 4831.84,
+      "solarKwh": 14706,
+      "batteryKwh": 3151,
+      "savingsUsd": 630.24,
+      "co2Kg": 12237,
+      "peakKw": 120
+    }
+  ]
+}

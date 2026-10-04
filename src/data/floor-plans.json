@@ -1,0 +1,92 @@
+[
+  {
+    "floorId": "main-floor-1",
+    "buildingId": "main-building",
+    "floorPlan": "/floor-plans/main-building-floor-1.svg",
+    "width": 1000,
+    "height": 640,
+    "zones": [
+      { "id": "lobby", "name": "Main Lobby", "type": "common", "geometry": { "x": 36, "y": 36, "width": 280, "height": 250 }, "deviceIds": ["light-lobby", "plug-tv", "meter-main"] },
+      { "id": "admin-101", "name": "Administration Suite", "type": "administration", "geometry": { "x": 336, "y": 36, "width": 420, "height": 360 }, "deviceIds": ["hvac-admin", "light-admin", "plug-coffee"] },
+      { "id": "plant-main", "name": "Plant Room", "type": "plant", "geometry": { "x": 36, "y": 360, "width": 280, "height": 244 }, "deviceIds": ["heat-main", "wh-01", "wh-02"] },
+      { "id": "elevator-main", "name": "Elevator Core", "type": "elevator", "geometry": { "x": 776, "y": 36, "width": 188, "height": 200 }, "deviceIds": ["elev-main"] },
+      { "id": "solar-yard", "name": "Roof Plant", "type": "plant", "geometry": { "x": 776, "y": 256, "width": 188, "height": 348 }, "deviceIds": ["solar-array", "inverter-1", "battery-1"] }
+    ]
+  },
+  {
+    "floorId": "main-floor-2",
+    "buildingId": "main-building",
+    "floorPlan": "/floor-plans/main-building-floor-2.svg",
+    "width": 1000,
+    "height": 640,
+    "zones": [
+      { "id": "lab-204", "name": "Computer Lab 204", "type": "laboratory", "geometry": { "x": 36, "y": 36, "width": 560, "height": 420 }, "deviceIds": ["hvac-204", "light-204-01", "light-204-03", "pc-204-01", "pc-204-17", "smartplug-204-01", "powermeter-204"] },
+      { "id": "classroom-201", "name": "Classroom 201", "type": "classroom", "geometry": { "x": 616, "y": 36, "width": 348, "height": 250 }, "deviceIds": ["light-201"] },
+      { "id": "office-210", "name": "Faculty Office 210", "type": "office", "geometry": { "x": 616, "y": 306, "width": 348, "height": 150 }, "deviceIds": [] }
+    ]
+  },
+  {
+    "floorId": "main-floor-3",
+    "buildingId": "main-building",
+    "floorPlan": "/floor-plans/main-building-floor-3.svg",
+    "width": 1000,
+    "height": 640,
+    "zones": [
+      { "id": "classroom-301", "name": "Classroom 301", "type": "classroom", "geometry": { "x": 36, "y": 36, "width": 520, "height": 400 }, "deviceIds": ["hvac-f3", "light-301"] },
+      { "id": "office-301", "name": "Office 301", "type": "office", "geometry": { "x": 576, "y": 36, "width": 388, "height": 180 }, "deviceIds": ["smartplug-04", "plug-monitor"] },
+      { "id": "seminar-305", "name": "Seminar 305", "type": "classroom", "geometry": { "x": 576, "y": 236, "width": 388, "height": 200 }, "deviceIds": ["light-305"] }
+    ]
+  },
+  {
+    "floorId": "main-floor-4",
+    "buildingId": "main-building",
+    "floorPlan": "/floor-plans/main-building-floor-4.svg",
+    "width": 1000,
+    "height": 640,
+    "zones": [
+      { "id": "faculty-401", "name": "Faculty Wing 401", "type": "office", "geometry": { "x": 36, "y": 36, "width": 928, "height": 500 }, "deviceIds": ["hvac-f4", "light-401", "pcs-faculty"] }
+    ]
+  },
+  {
+    "floorId": "pab-floor-1",
+    "buildingId": "pab",
+    "floorPlan": "/floor-plans/pab-floor-1.svg",
+    "width": 1000,
+    "height": 640,
+    "zones": [
+      { "id": "pab-hall", "name": "Lecture Hall", "type": "classroom", "geometry": { "x": 36, "y": 36, "width": 720, "height": 520 }, "deviceIds": ["hvac-pab", "light-pab"] },
+      { "id": "elevator-pab", "name": "Elevator Core", "type": "elevator", "geometry": { "x": 776, "y": 36, "width": 188, "height": 220 }, "deviceIds": ["elev-pab"] }
+    ]
+  },
+  {
+    "floorId": "pab-floor-2",
+    "buildingId": "pab",
+    "floorPlan": "/floor-plans/pab-floor-2.svg",
+    "width": 1000,
+    "height": 640,
+    "zones": [
+      { "id": "pab-labs", "name": "Engineering Labs", "type": "laboratory", "geometry": { "x": 36, "y": 36, "width": 928, "height": 520 }, "deviceIds": ["cool-pab", "light-pab-labs", "pcs-pab"] }
+    ]
+  },
+  {
+    "floorId": "akian-floor-1",
+    "buildingId": "akian",
+    "floorPlan": "/floor-plans/akian-floor-1.svg",
+    "width": 1000,
+    "height": 640,
+    "zones": [
+      { "id": "gallery", "name": "Gallery", "type": "common", "geometry": { "x": 36, "y": 36, "width": 720, "height": 520 }, "deviceIds": ["light-gallery"] },
+      { "id": "elevator-akian", "name": "Elevator Core", "type": "elevator", "geometry": { "x": 776, "y": 36, "width": 188, "height": 220 }, "deviceIds": ["elev-akian"] }
+    ]
+  },
+  {
+    "floorId": "akian-floor-2",
+    "buildingId": "akian",
+    "floorPlan": "/floor-plans/akian-floor-2.svg",
+    "width": 1000,
+    "height": 640,
+    "zones": [
+      { "id": "reading-room", "name": "Reading Room", "type": "library", "geometry": { "x": 36, "y": 36, "width": 928, "height": 520 }, "deviceIds": ["hvac-akian", "light-reading"] }
+    ]
+  }
+]

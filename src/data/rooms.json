@@ -1,0 +1,164 @@
+[
+  {
+    "id": "admin-101",
+    "floorId": "main-floor-1",
+    "buildingId": "main-building",
+    "name": "Administration Suite",
+    "zoneType": "administration",
+    "areaM2": 640,
+    "capacity": 40
+  },
+  {
+    "id": "lobby",
+    "floorId": "main-floor-1",
+    "buildingId": "main-building",
+    "name": "Main Lobby",
+    "zoneType": "common",
+    "areaM2": 280,
+    "capacity": 80
+  },
+  {
+    "id": "plant-main",
+    "floorId": "main-floor-1",
+    "buildingId": "main-building",
+    "name": "Plant Room",
+    "zoneType": "plant",
+    "areaM2": 90,
+    "capacity": 2
+  },
+  {
+    "id": "elevator-main",
+    "floorId": "main-floor-1",
+    "buildingId": "main-building",
+    "name": "Elevator Core",
+    "zoneType": "elevator",
+    "areaM2": 24,
+    "capacity": 0
+  },
+  {
+    "id": "lab-204",
+    "floorId": "main-floor-2",
+    "buildingId": "main-building",
+    "name": "Computer Lab 204",
+    "zoneType": "lab",
+    "areaM2": 180,
+    "capacity": 36
+  },
+  {
+    "id": "classroom-201",
+    "floorId": "main-floor-2",
+    "buildingId": "main-building",
+    "name": "Classroom 201",
+    "zoneType": "classroom",
+    "areaM2": 120,
+    "capacity": 40
+  },
+  {
+    "id": "office-210",
+    "floorId": "main-floor-2",
+    "buildingId": "main-building",
+    "name": "Faculty Office 210",
+    "zoneType": "office",
+    "areaM2": 28,
+    "capacity": 4
+  },
+  {
+    "id": "classroom-301",
+    "floorId": "main-floor-3",
+    "buildingId": "main-building",
+    "name": "Classroom 301",
+    "zoneType": "classroom",
+    "areaM2": 140,
+    "capacity": 48
+  },
+  {
+    "id": "office-301",
+    "floorId": "main-floor-3",
+    "buildingId": "main-building",
+    "name": "Office 301",
+    "zoneType": "office",
+    "areaM2": 32,
+    "capacity": 4
+  },
+  {
+    "id": "seminar-305",
+    "floorId": "main-floor-3",
+    "buildingId": "main-building",
+    "name": "Seminar 305",
+    "zoneType": "classroom",
+    "areaM2": 70,
+    "capacity": 18
+  },
+  {
+    "id": "faculty-401",
+    "floorId": "main-floor-4",
+    "buildingId": "main-building",
+    "name": "Faculty Wing 401",
+    "zoneType": "office",
+    "areaM2": 420,
+    "capacity": 30
+  },
+  {
+    "id": "pab-hall",
+    "floorId": "pab-floor-1",
+    "buildingId": "pab",
+    "name": "Lecture Hall",
+    "zoneType": "classroom",
+    "areaM2": 360,
+    "capacity": 120
+  },
+  {
+    "id": "pab-labs",
+    "floorId": "pab-floor-2",
+    "buildingId": "pab",
+    "name": "Engineering Labs",
+    "zoneType": "lab",
+    "areaM2": 300,
+    "capacity": 40
+  },
+  {
+    "id": "elevator-pab",
+    "floorId": "pab-floor-1",
+    "buildingId": "pab",
+    "name": "Elevator Core",
+    "zoneType": "elevator",
+    "areaM2": 18,
+    "capacity": 0
+  },
+  {
+    "id": "gallery",
+    "floorId": "akian-floor-1",
+    "buildingId": "akian",
+    "name": "Gallery",
+    "zoneType": "common",
+    "areaM2": 400,
+    "capacity": 60
+  },
+  {
+    "id": "reading-room",
+    "floorId": "akian-floor-2",
+    "buildingId": "akian",
+    "name": "Reading Room",
+    "zoneType": "library",
+    "areaM2": 260,
+    "capacity": 50
+  },
+  {
+    "id": "elevator-akian",
+    "floorId": "akian-floor-1",
+    "buildingId": "akian",
+    "name": "Elevator Core",
+    "zoneType": "elevator",
+    "areaM2": 12,
+    "capacity": 0
+  },
+  {
+    "id": "solar-yard",
+    "floorId": "main-floor-1",
+    "buildingId": "main-building",
+    "name": "Roof Plant",
+    "zoneType": "plant",
+    "areaM2": 800,
+    "capacity": 0
+  }
+]

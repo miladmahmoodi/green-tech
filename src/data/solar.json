@@ -1,0 +1,680 @@
+{
+  "capacityKw": 120,
+  "currentKw": 82,
+  "inverterId": "inverter-1",
+  "inverterStatus": "connected",
+  "curve": [
+    {
+      "t": "00:00",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "00:15",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "00:30",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "00:45",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "01:00",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "01:15",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "01:30",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "01:45",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "02:00",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "02:15",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "02:30",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "02:45",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "03:00",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "03:15",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "03:30",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "03:45",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "04:00",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "04:15",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "04:30",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "04:45",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "05:00",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "05:15",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "05:30",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "05:45",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "06:00",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "06:15",
+      "generationKw": 0,
+      "demandKw": 52.3,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "06:30",
+      "generationKw": 0,
+      "demandKw": 56.5,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "06:45",
+      "generationKw": 5.4,
+      "demandKw": 60.7,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "07:00",
+      "generationKw": 10.7,
+      "demandKw": 64.9,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "07:15",
+      "generationKw": 16,
+      "demandKw": 69,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "07:30",
+      "generationKw": 21.2,
+      "demandKw": 73.1,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "07:45",
+      "generationKw": 26.4,
+      "demandKw": 77.1,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "08:00",
+      "generationKw": 31.4,
+      "demandKw": 81,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "08:15",
+      "generationKw": 36.3,
+      "demandKw": 84.8,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "08:30",
+      "generationKw": 41,
+      "demandKw": 88.4,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "08:45",
+      "generationKw": 45.6,
+      "demandKw": 92,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "09:00",
+      "generationKw": 49.9,
+      "demandKw": 103.4,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "09:15",
+      "generationKw": 54.1,
+      "demandKw": 106.6,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "09:30",
+      "generationKw": 58,
+      "demandKw": 109.7,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "09:45",
+      "generationKw": 61.7,
+      "demandKw": 112.7,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "10:00",
+      "generationKw": 65.1,
+      "demandKw": 115.4,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "10:15",
+      "generationKw": 68.2,
+      "demandKw": 118,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "10:30",
+      "generationKw": 82,
+      "demandKw": 124,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "10:45",
+      "generationKw": 73.5,
+      "demandKw": 122.5,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "11:00",
+      "generationKw": 75.8,
+      "demandKw": 124.5,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "11:15",
+      "generationKw": 77.6,
+      "demandKw": 126.2,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "11:30",
+      "generationKw": 79.2,
+      "demandKw": 127.7,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "11:45",
+      "generationKw": 80.4,
+      "demandKw": 129,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "12:00",
+      "generationKw": 81.3,
+      "demandKw": 130.1,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "12:15",
+      "generationKw": 81.8,
+      "demandKw": 130.9,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "12:30",
+      "generationKw": 82,
+      "demandKw": 131.5,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "12:45",
+      "generationKw": 81.8,
+      "demandKw": 131.9,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "13:00",
+      "generationKw": 81.3,
+      "demandKw": 132,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "13:15",
+      "generationKw": 80.4,
+      "demandKw": 131.9,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "13:30",
+      "generationKw": 79.2,
+      "demandKw": 131.5,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "13:45",
+      "generationKw": 77.6,
+      "demandKw": 130.9,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "14:00",
+      "generationKw": 75.8,
+      "demandKw": 130.1,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "14:15",
+      "generationKw": 73.5,
+      "demandKw": 129,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "14:30",
+      "generationKw": 71,
+      "demandKw": 127.7,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "14:45",
+      "generationKw": 68.2,
+      "demandKw": 126.2,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "15:00",
+      "generationKw": 65.1,
+      "demandKw": 124.5,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "15:15",
+      "generationKw": 61.7,
+      "demandKw": 122.5,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "15:30",
+      "generationKw": 58,
+      "demandKw": 120.4,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "15:45",
+      "generationKw": 54.1,
+      "demandKw": 118,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "16:00",
+      "generationKw": 49.9,
+      "demandKw": 115.4,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "16:15",
+      "generationKw": 45.6,
+      "demandKw": 104.7,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "16:30",
+      "generationKw": 41,
+      "demandKw": 101.7,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "16:45",
+      "generationKw": 36.3,
+      "demandKw": 98.6,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "17:00",
+      "generationKw": 31.4,
+      "demandKw": 95.4,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "17:15",
+      "generationKw": 26.4,
+      "demandKw": 92,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "17:30",
+      "generationKw": 21.2,
+      "demandKw": 88.4,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "17:45",
+      "generationKw": 16,
+      "demandKw": 84.8,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "18:00",
+      "generationKw": 10.7,
+      "demandKw": 81,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "18:15",
+      "generationKw": 5.4,
+      "demandKw": 77.1,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "18:30",
+      "generationKw": 0,
+      "demandKw": 73.1,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "18:45",
+      "generationKw": 0,
+      "demandKw": 69,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "19:00",
+      "generationKw": 0,
+      "demandKw": 64.9,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "19:15",
+      "generationKw": 0,
+      "demandKw": 60.7,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "19:30",
+      "generationKw": 0,
+      "demandKw": 56.5,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "19:45",
+      "generationKw": 0,
+      "demandKw": 52.3,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "20:00",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "20:15",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "20:30",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "20:45",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.16,
+      "batteryKw": 18
+    },
+    {
+      "t": "21:00",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "21:15",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "21:30",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "21:45",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "22:00",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "22:15",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "22:30",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "22:45",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "23:00",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "23:15",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "23:30",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    },
+    {
+      "t": "23:45",
+      "generationKw": 0,
+      "demandKw": 48,
+      "priceUsd": 0.08,
+      "batteryKw": 0
+    }
+  ]
+}

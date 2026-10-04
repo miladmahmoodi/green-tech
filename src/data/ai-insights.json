@@ -1,0 +1,459 @@
+[
+  {
+    "id": "lab-204-unoccupied",
+    "title": "Energy optimization opportunity detected",
+    "location": "Computer Lab 204",
+    "category": "opportunity",
+    "what": "32 computers and HVAC are consuming energy while the room is currently unoccupied.",
+    "why": "An empty teaching lab does not need comfort cooling or active workstations. This load is waste, not useful work.",
+    "cause": "Occupancy dropped to zero, but lighting, computers, and HVAC stayed in the occupied state.",
+    "actionLabel": "Shut down unused computers, turn off remote lights, and set HVAC to Eco.",
+    "confidence": 94,
+    "dailySavingUsd": 3.4,
+    "monthlySavingUsd": 102,
+    "occupancyRoomId": "lab-204",
+    "powerRoomId": "lab-204",
+    "powerTypes": [
+      "computer",
+      "hvac"
+    ],
+    "wasteKw": 4.9,
+    "trigger": [
+      {
+        "metric": "occupancy.lab-204",
+        "op": "eq",
+        "value": 0
+      },
+      {
+        "metric": "room.lab-204.powerKw",
+        "op": "gt",
+        "value": 2
+      }
+    ],
+    "plan": {
+      "id": "plan-lab-204",
+      "summary": "Turn off unused lights and inactive computers, and set HVAC-204 to Eco.",
+      "actions": [
+        {
+          "type": "set_devices",
+          "filter": {
+            "roomId": "lab-204",
+            "type": "lighting",
+            "controllable": true,
+            "state": "on"
+          },
+          "patch": {
+            "state": "off",
+            "powerKw": 0
+          }
+        },
+        {
+          "type": "set_devices",
+          "filter": {
+            "roomId": "lab-204",
+            "type": "computer",
+            "controllable": true,
+            "state": "on"
+          },
+          "patch": {
+            "state": "off",
+            "powerKw": 0
+          }
+        },
+        {
+          "type": "set_device",
+          "id": "hvac-204",
+          "patch": {
+            "state": "on",
+            "powerKw": 1.9,
+            "props": {
+              "mode": "eco"
+            }
+          }
+        }
+      ],
+      "expectedDailyUsd": 3.4,
+      "expectedMonthlyUsd": 102,
+      "expectedPowerKw": 4.9,
+      "assumedHoursPerDay": 8.7
+    },
+    "opportunity": true,
+    "contextNotes": [
+      "Room occupancy is zero",
+      "Teaching block has ended for this room",
+      "Remote control is available for computers, HVAC, and 13 of 14 lights"
+    ]
+  },
+  {
+    "id": "lights-lab-204",
+    "title": "Unused lighting in an empty lab",
+    "location": "Computer Lab 204",
+    "category": "opportunity",
+    "what": "14 lights are on while Computer Lab 204 is empty.",
+    "why": "Lighting left on in an unoccupied room adds a steady load with no occupant benefit.",
+    "cause": "The lighting zone stayed in automatic occupied mode after the room emptied. Light-204-03 is local-only and cannot be switched remotely.",
+    "actionLabel": "Turn off unused lighting.",
+    "confidence": 96,
+    "dailySavingUsd": 1.08,
+    "monthlySavingUsd": 32,
+    "occupancyRoomId": "lab-204",
+    "powerRoomId": "lab-204",
+    "powerTypes": [
+      "lighting"
+    ],
+    "wasteKw": 1.56,
+    "trigger": [
+      {
+        "metric": "occupancy.lab-204",
+        "op": "eq",
+        "value": 0
+      },
+      {
+        "metric": "room.lab-204.lightingOn",
+        "op": "gt",
+        "value": 1
+      }
+    ],
+    "suppress": [
+      {
+        "metric": "insight.lab-204-unoccupied.applied",
+        "op": "eq",
+        "value": true
+      }
+    ],
+    "plan": {
+      "id": "plan-lights-204",
+      "summary": "Turn off remotely controlled lights in Computer Lab 204.",
+      "actions": [
+        {
+          "type": "set_devices",
+          "filter": {
+            "roomId": "lab-204",
+            "type": "lighting",
+            "controllable": true,
+            "state": "on"
+          },
+          "patch": {
+            "state": "off",
+            "powerKw": 0
+          }
+        }
+      ],
+      "expectedDailyUsd": 1.08,
+      "expectedMonthlyUsd": 32,
+      "expectedPowerKw": 1.56,
+      "assumedHoursPerDay": 8.7
+    },
+    "opportunity": true,
+    "standing": true
+  },
+  {
+    "id": "admin-hvac",
+    "title": "HVAC schedule is longer than occupancy",
+    "location": "Administration Suite",
+    "category": "opportunity",
+    "what": "Administration HVAC is holding comfort mode above the historical schedule for this floor.",
+    "why": "Comfort mode costs more than Eco once the suite is only partly staffed, and the gap repeats every weekday.",
+    "cause": "The occupied schedule still ends at 19:00, later than the last two weeks of badge-in patterns.",
+    "actionLabel": "Adjust HVAC schedule",
+    "confidence": 89,
+    "dailySavingUsd": 2.53,
+    "monthlySavingUsd": 76,
+    "occupancyRoomId": "admin-101",
+    "powerRoomId": "admin-101",
+    "powerTypes": [
+      "hvac"
+    ],
+    "wasteKw": 2.8,
+    "trigger": [
+      {
+        "metric": "context.teachingScheduleActive",
+        "op": "eq",
+        "value": true
+      }
+    ],
+    "plan": {
+      "id": "plan-admin-hvac",
+      "summary": "Set administration HVAC to Eco and shorten the comfort window.",
+      "actions": [
+        {
+          "type": "set_device",
+          "id": "hvac-admin",
+          "patch": {
+            "powerKw": 3.6,
+            "props": {
+              "mode": "eco",
+              "schedule": [
+                "08:00–17:30"
+              ]
+            }
+          }
+        }
+      ],
+      "expectedDailyUsd": 2.53,
+      "expectedMonthlyUsd": 76,
+      "expectedPowerKw": 2.8,
+      "assumedHoursPerDay": 6
+    },
+    "opportunity": true,
+    "standing": true
+  },
+  {
+    "id": "water-heating-shift",
+    "title": "Water heating overlaps a higher-cost window",
+    "location": "Plant Room",
+    "category": "opportunity",
+    "what": "Water Heater #02 recovers during 18:00–20:00, which sits inside the peak tariff.",
+    "why": "The same thermal energy costs twice as much inside 18:00–21:00 as it does in the morning window.",
+    "cause": "The evening schedule was set for occupancy, not for the tariff.",
+    "actionLabel": "Shift heating to lower-cost period",
+    "confidence": 91,
+    "dailySavingUsd": 1.6,
+    "monthlySavingUsd": 48,
+    "powerRoomId": "plant-main",
+    "powerTypes": [
+      "water_heater"
+    ],
+    "trigger": [
+      {
+        "metric": "device.wh-02.state",
+        "op": "eq",
+        "value": "on"
+      }
+    ],
+    "plan": {
+      "id": "plan-wh-02",
+      "summary": "Move the evening recovery window to late morning, before the peak tariff.",
+      "actions": [
+        {
+          "type": "set_device",
+          "id": "wh-02",
+          "patch": {
+            "props": {
+              "schedule": [
+                "06:00–08:00",
+                "10:30–12:30"
+              ]
+            }
+          }
+        }
+      ],
+      "expectedDailyUsd": 1.6,
+      "expectedMonthlyUsd": 48,
+      "expectedPowerKw": 0,
+      "assumedHoursPerDay": 2
+    },
+    "opportunity": true,
+    "standing": true
+  },
+  {
+    "id": "solar-charge",
+    "title": "Charge the battery with surplus solar",
+    "location": "Campus",
+    "category": "strategy",
+    "what": "Solar generation is above building demand, and the battery has room to store it.",
+    "why": "Energy stored now avoids importing from the grid during the 18:00–21:00 peak, when the price doubles.",
+    "cause": "Midday solar exceeds the current load and the battery is below its charge limit.",
+    "actionLabel": "Charge battery with 25 kW solar surplus.",
+    "confidence": 93,
+    "dailySavingUsd": 12.4,
+    "monthlySavingUsd": 248,
+    "wasteKw": 25,
+    "trigger": [
+      {
+        "metric": "solar.surplusKw",
+        "op": "gt",
+        "value": 20
+      },
+      {
+        "metric": "battery.soc",
+        "op": "lt",
+        "value": 90
+      }
+    ],
+    "plan": {
+      "id": "plan-charge",
+      "summary": "Charge the campus battery at 25 kW from surplus solar.",
+      "actions": [
+        {
+          "type": "set_battery",
+          "soc": 74,
+          "powerKw": -25
+        }
+      ],
+      "expectedDailyUsd": 12.4,
+      "expectedMonthlyUsd": 248,
+      "expectedPowerKw": 25,
+      "assumedHoursPerDay": 2
+    },
+    "opportunity": true,
+    "contextNotes": [
+      "Grid price is low",
+      "Battery is below 90%",
+      "Surplus would otherwise be exported at the off-peak rate"
+    ]
+  },
+  {
+    "id": "peak-discharge",
+    "title": "Discharge the battery through the peak",
+    "location": "Campus",
+    "category": "strategy",
+    "what": "The grid price has moved to the peak tariff while the battery still holds stored energy.",
+    "why": "Each kilowatt-hour served from the battery avoids the $0.16 peak price.",
+    "cause": "The tariff window 18:00–21:00 is active and the battery is above its reserve.",
+    "actionLabel": "Discharge battery during the peak period to reduce grid cost.",
+    "confidence": 92,
+    "dailySavingUsd": 4.8,
+    "monthlySavingUsd": 96,
+    "trigger": [
+      {
+        "metric": "price.current",
+        "op": "gte",
+        "value": 0.16
+      },
+      {
+        "metric": "battery.soc",
+        "op": "gt",
+        "value": 30
+      }
+    ],
+    "plan": {
+      "id": "plan-discharge",
+      "summary": "Discharge the battery at 30 kW to cover building load through the peak.",
+      "actions": [
+        {
+          "type": "set_battery",
+          "powerKw": 30
+        }
+      ],
+      "expectedDailyUsd": 4.8,
+      "expectedMonthlyUsd": 96,
+      "expectedPowerKw": 30,
+      "assumedHoursPerDay": 2
+    },
+    "opportunity": true
+  },
+  {
+    "id": "battery-full",
+    "title": "Battery is nearly full",
+    "location": "Campus",
+    "category": "strategy",
+    "what": "The campus battery is at the top of its usable range, so further charging has little value.",
+    "why": "A full battery cannot absorb midday surplus. Extra solar should be exported or used to bring flexible loads forward.",
+    "cause": "State of charge is above 90%, which also blocks the automatic charge rule.",
+    "actionLabel": "Export surplus solar or shift flexible load into this hour.",
+    "confidence": 90,
+    "dailySavingUsd": 2.1,
+    "monthlySavingUsd": 42,
+    "trigger": [
+      {
+        "metric": "battery.soc",
+        "op": "gte",
+        "value": 90
+      }
+    ],
+    "plan": null,
+    "opportunity": false,
+    "contextNotes": [
+      "Charge rule requires battery below 90%",
+      "Reserve for the evening peak is already met"
+    ]
+  },
+  {
+    "id": "registration-normal",
+    "title": "Usage is inside the expected range",
+    "location": "AUA Campus",
+    "category": "context",
+    "what": "Today's consumption is 6.2% below the context-adjusted expectation.",
+    "why": "Registration brings more people on site, and 8°C outdoor air raises heating load. Both are already in the expectation, so this is not an anomaly.",
+    "cause": "Student registration period, high occupancy, outdoor temperature of 8°C, and an active teaching schedule.",
+    "actionLabel": "No action. Keep the current schedule.",
+    "confidence": 88,
+    "dailySavingUsd": 0,
+    "monthlySavingUsd": 0,
+    "trigger": [
+      {
+        "metric": "context.registrationPeriod",
+        "op": "eq",
+        "value": true
+      }
+    ],
+    "plan": null,
+    "opportunity": false,
+    "contextNotes": [
+      "Student registration period",
+      "High occupancy",
+      "Outdoor temperature: 8°C",
+      "Teaching schedule active"
+    ]
+  },
+  {
+    "id": "high-occupancy-normal",
+    "title": "Higher demand matches the event",
+    "location": "Paramaz Avedisian Building",
+    "category": "context",
+    "what": "Demand stepped up with a full lecture hall, and it is still inside the expected band.",
+    "why": "A high-occupancy event is a reason for higher use, not a fault. The expectation moved with the occupancy.",
+    "cause": "Lecture hall occupancy is at capacity while HVAC and lighting follow the occupied schedule.",
+    "actionLabel": "No action. Review again after the event.",
+    "confidence": 86,
+    "dailySavingUsd": 0,
+    "monthlySavingUsd": 0,
+    "occupancyRoomId": "pab-hall",
+    "trigger": [
+      {
+        "metric": "context.highOccupancyEvent",
+        "op": "eq",
+        "value": true
+      }
+    ],
+    "plan": null,
+    "opportunity": false,
+    "contextNotes": [
+      "High occupancy event",
+      "Lecture hall at capacity",
+      "Expectation raised with occupancy"
+    ]
+  },
+  {
+    "id": "floor3-hvac-warning",
+    "title": "HVAC consumption on Floor 3 is 27% above expected",
+    "location": "Floor 3 · Main Building",
+    "category": "opportunity",
+    "what": "Floor 3 HVAC is drawing more power than the context-adjusted expectation for this hour.",
+    "why": "Occupancy on the floor is normal, so the extra runtime is not explained by people or weather.",
+    "cause": "HVAC runtime is significantly higher than historical patterns for the same occupancy, schedule, and outdoor temperature.",
+    "actionLabel": "Review Floor 3 HVAC runtime and setpoints.",
+    "confidence": 84,
+    "dailySavingUsd": 1.4,
+    "monthlySavingUsd": 42,
+    "trigger": [
+      {
+        "metric": "floor.main-floor-3.hvacDeviationPct",
+        "op": "gte",
+        "value": 20
+      }
+    ],
+    "plan": {
+      "id": "plan-floor3",
+      "summary": "Return Floor 3 HVAC to its expected power and Eco-leaning auto mode.",
+      "actions": [
+        {
+          "type": "set_device",
+          "id": "hvac-f3",
+          "patch": {
+            "powerKw": 8,
+            "props": {
+              "mode": "eco"
+            }
+          }
+        }
+      ],
+      "expectedDailyUsd": 1.4,
+      "expectedMonthlyUsd": 42,
+      "expectedPowerKw": 2.16,
+      "assumedHoursPerDay": 5
+    },
+    "opportunity": true
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "currency": "USD",
+  "unit": "kWh",
+  "offPeakUsdPerKwh": 0.08,
+  "peakUsdPerKwh": 0.16,
+  "peakWindow": "18:00–21:00",
+  "currentUsdPerKwh": 0.08,
+  "curve": [
+    {
+      "t": "00:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "01:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "02:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "03:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "04:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "05:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "06:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "07:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "08:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "09:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "10:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "11:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "12:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "13:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "14:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "15:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "16:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "17:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "18:00",
+      "usdPerKwh": 0.16
+    },
+    {
+      "t": "19:00",
+      "usdPerKwh": 0.16
+    },
+    {
+      "t": "20:00",
+      "usdPerKwh": 0.16
+    },
+    {
+      "t": "21:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "22:00",
+      "usdPerKwh": 0.08
+    },
+    {
+      "t": "23:00",
+      "usdPerKwh": 0.08
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "teaching",
+    "name": "Teaching timetable",
+    "scope": "Campus",
+    "windows": [
+      "09:00–12:30",
+      "13:30–18:00"
+    ],
+    "notes": "Weekday teaching blocks. Labs follow the same timetable."
+  },
+  {
+    "id": "hvac-occupied",
+    "name": "Occupied HVAC",
+    "scope": "Main Building",
+    "windows": [
+      "07:30–20:00"
+    ],
+    "notes": "Comfort mode while teaching is active. Eco outside these hours."
+  },
+  {
+    "id": "water-heating",
+    "name": "Water heating",
+    "scope": "Plant Room",
+    "windows": [
+      "06:00–08:00",
+      "18:00–20:00"
+    ],
+    "notes": "Two recovery windows. The evening window overlaps the peak tariff."
+  },
+  {
+    "id": "lab-204",
+    "name": "Computer Lab 204",
+    "scope": "Computer Lab 204",
+    "windows": [
+      "09:00–13:00",
+      "14:00–18:00"
+    ],
+    "notes": "Scheduled classes. The room is expected to be empty after 18:00."
+  },
+  {
+    "id": "registration",
+    "name": "Registration support",
+    "scope": "Administration Suite",
+    "windows": [
+      "09:00–17:00"
+    ],
+    "notes": "Extended staffing during the registration period."
+  }
+]

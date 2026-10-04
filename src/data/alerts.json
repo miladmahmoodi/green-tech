@@ -1,0 +1,74 @@
+[
+  {
+    "id": "alert-floor3-hvac",
+    "severity": "medium",
+    "title": "HVAC consumption on Floor 3 is 27% above expected.",
+    "reason": "Occupancy is normal, but HVAC runtime is significantly higher than historical patterns.",
+    "recommendation": "Review setpoints and runtime before the next teaching block.",
+    "location": "Floor 3 · Main Building",
+    "deviceId": "hvac-f3",
+    "when": [
+      {
+        "metric": "floor.main-floor-3.hvacDeviationPct",
+        "op": "gte",
+        "value": 20
+      }
+    ]
+  },
+  {
+    "id": "alert-solar-forecast",
+    "severity": "info",
+    "title": "Solar generation is expected to exceed building demand by 32 kW between 12:00–14:00.",
+    "reason": "The midday forecast stays above the expected campus load.",
+    "recommendation": "Charge the battery.",
+    "location": "Roof plant",
+    "when": [
+      {
+        "metric": "solar.currentKw",
+        "op": "gt",
+        "value": 0
+      }
+    ]
+  },
+  {
+    "id": "alert-smartplug-04",
+    "severity": "high",
+    "title": "SmartPlug-04 has been disconnected for 8 minutes.",
+    "reason": "The plug stopped reporting. Its load is no longer metered and cannot be controlled.",
+    "recommendation": "Check the outlet in Office 301.",
+    "location": "Office 301",
+    "deviceId": "smartplug-04",
+    "when": [
+      {
+        "metric": "device.smartplug-04.status",
+        "op": "eq",
+        "value": "disconnected"
+      }
+    ]
+  },
+  {
+    "id": "alert-local-light",
+    "severity": "low",
+    "title": "Light-204-03 stayed on because it is locally controlled.",
+    "reason": "The optimization could not switch a manual device. Someone on site needs to use the wall control.",
+    "location": "Computer Lab 204",
+    "deviceId": "light-204-03",
+    "when": [
+      {
+        "metric": "occupancy.lab-204",
+        "op": "eq",
+        "value": 0
+      },
+      {
+        "metric": "device.light-204-03.state",
+        "op": "eq",
+        "value": "on"
+      },
+      {
+        "metric": "insight.lab-204-unoccupied.applied",
+        "op": "eq",
+        "value": true
+      }
+    ]
+  }
+]

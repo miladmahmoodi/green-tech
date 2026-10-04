@@ -1,0 +1,92 @@
+[
+  {
+    "roomId": "admin-101",
+    "people": 22,
+    "capacity": 40
+  },
+  {
+    "roomId": "lobby",
+    "people": 14,
+    "capacity": 80
+  },
+  {
+    "roomId": "plant-main",
+    "people": 1,
+    "capacity": 2
+  },
+  {
+    "roomId": "elevator-main",
+    "people": 0,
+    "capacity": 0
+  },
+  {
+    "roomId": "lab-204",
+    "people": 24,
+    "capacity": 36
+  },
+  {
+    "roomId": "classroom-201",
+    "people": 31,
+    "capacity": 40
+  },
+  {
+    "roomId": "office-210",
+    "people": 2,
+    "capacity": 4
+  },
+  {
+    "roomId": "classroom-301",
+    "people": 18,
+    "capacity": 48
+  },
+  {
+    "roomId": "office-301",
+    "people": 1,
+    "capacity": 4
+  },
+  {
+    "roomId": "seminar-305",
+    "people": 8,
+    "capacity": 18
+  },
+  {
+    "roomId": "faculty-401",
+    "people": 11,
+    "capacity": 30
+  },
+  {
+    "roomId": "pab-hall",
+    "people": 46,
+    "capacity": 120
+  },
+  {
+    "roomId": "pab-labs",
+    "people": 12,
+    "capacity": 40
+  },
+  {
+    "roomId": "elevator-pab",
+    "people": 0,
+    "capacity": 0
+  },
+  {
+    "roomId": "gallery",
+    "people": 6,
+    "capacity": 60
+  },
+  {
+    "roomId": "reading-room",
+    "people": 19,
+    "capacity": 50
+  },
+  {
+    "roomId": "elevator-akian",
+    "people": 0,
+    "capacity": 0
+  },
+  {
+    "roomId": "solar-yard",
+    "people": 0,
+    "capacity": 0
+  }
+]

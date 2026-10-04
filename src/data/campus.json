@@ -1,0 +1,128 @@
+{
+  "id": "aua",
+  "name": "AUA Campus",
+  "city": "Yerevan",
+  "timezone": "Asia/Yerevan",
+  "todayEnergyKwh": 1284,
+  "todayCostUsd": 143.2,
+  "baselineSavingsUsd": 38.4,
+  "baselinePowerKw": 124,
+  "co2KgPerKwh": 0.233,
+  "context": {
+    "season": "Autumn",
+    "outdoorTempC": 14,
+    "registrationPeriod": false,
+    "examPeriod": false,
+    "teachingScheduleActive": true,
+    "highOccupancyEvent": false,
+    "dailyExpectedKwh": null,
+    "dailyActualKwh": null,
+    "deviationLabel": null
+  },
+  "demoStory": [
+    {
+      "id": "overview",
+      "title": "Campus overview",
+      "detail": "Start on the command center. Demand, cost, solar, battery, grid, and savings are already live.",
+      "route": "/",
+      "highlight": "kpi-row"
+    },
+    {
+      "id": "open-lab",
+      "title": "Open Computer Lab 204",
+      "detail": "The lab is in session with 24 occupants.",
+      "route": "/campus/main-building/main-floor-2/lab-204",
+      "highlight": "room-summary"
+    },
+    {
+      "id": "lab-empty",
+      "title": "Lab becomes unoccupied",
+      "detail": "Occupancy falls from 24 to 0. Lights, computers, and HVAC stay on.",
+      "route": "/campus/main-building/main-floor-2/lab-204",
+      "scenarioId": "lab-unoccupied",
+      "highlight": "room-summary"
+    },
+    {
+      "id": "detect",
+      "title": "Unnecessary consumption",
+      "detail": "The advisor flags the empty lab. This is waste, not a busy hour.",
+      "route": "/advisor",
+      "highlight": "insight-lab-204-unoccupied"
+    },
+    {
+      "id": "explain",
+      "title": "Why it matters",
+      "detail": "Open the explanation: what happened, why, and the cause.",
+      "route": "/advisor",
+      "highlight": "insight-lab-204-unoccupied"
+    },
+    {
+      "id": "savings",
+      "title": "Estimated savings",
+      "detail": "$3.40 today and $102 over the month, at 94% confidence.",
+      "route": "/advisor",
+      "highlight": "insight-lab-204-unoccupied"
+    },
+    {
+      "id": "apply",
+      "title": "Apply the optimization",
+      "detail": "The rules engine runs the plan. Local-only Light-204-03 is skipped.",
+      "route": "/advisor",
+      "applyInsightId": "lab-204-unoccupied",
+      "highlight": "insight-lab-204-unoccupied"
+    },
+    {
+      "id": "devices",
+      "title": "Devices change state",
+      "detail": "Remote lights and inactive computers are off. HVAC-204 is in Eco.",
+      "route": "/devices",
+      "highlight": "device-table"
+    },
+    {
+      "id": "power-down",
+      "title": "Demand falls",
+      "detail": "Campus power and the energy flow both drop by the measured saving.",
+      "route": "/",
+      "highlight": "kpi-row"
+    },
+    {
+      "id": "solar",
+      "title": "Solar surplus",
+      "detail": "Generation stays high while demand falls to 51 kW, leaving 31 kW of surplus.",
+      "route": "/solar-battery",
+      "scenarioId": "solar-surplus",
+      "highlight": "strategy-panel"
+    },
+    {
+      "id": "charge",
+      "title": "Battery charges",
+      "detail": "Apply the charge plan. State of charge moves from 63% to 74%.",
+      "route": "/solar-battery",
+      "applyInsightId": "solar-charge",
+      "highlight": "strategy-panel"
+    },
+    {
+      "id": "peak",
+      "title": "Peak price",
+      "detail": "The tariff moves to $0.16/kWh for 18:00–21:00.",
+      "route": "/solar-battery",
+      "scenarioId": "peak-price",
+      "highlight": "peak-panel"
+    },
+    {
+      "id": "discharge",
+      "title": "Battery supplies the building",
+      "detail": "Discharge cuts grid import and records the avoided peak cost.",
+      "route": "/solar-battery",
+      "applyInsightId": "peak-discharge",
+      "highlight": "peak-panel"
+    },
+    {
+      "id": "totals",
+      "title": "Savings for the day",
+      "detail": "Energy saved and cost avoided, with the daily and monthly projection.",
+      "route": "/",
+      "highlight": "savings-strip"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "capacityKwh": 240,
+  "soc": 67,
+  "powerKw": 0,
+  "maxChargeKw": 60,
+  "maxDischargeKw": 60,
+  "reserveSoc": 20,
+  "status": "connected"
+}

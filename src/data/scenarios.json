@@ -1,0 +1,158 @@
+[
+  {
+    "id": "lab-unoccupied",
+    "name": "Lab Becomes Unoccupied",
+    "description": "Computer Lab 204 empties. Lights, computers, and HVAC stay in the occupied state.",
+    "expectedInsightId": "lab-204-unoccupied",
+    "changes": {
+      "occupancy": {
+        "lab-204": 0
+      },
+      "devices": {
+        "hvac-204": {
+          "state": "on",
+          "powerKw": 4.2,
+          "props": {
+            "mode": "comfort"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "solar-surplus",
+    "name": "Solar Surplus",
+    "description": "Solar rises to 82 kW while campus demand falls to the midday lull of 51 kW.",
+    "expectedInsightId": "solar-charge",
+    "changes": {
+      "solar": {
+        "currentKw": 82
+      },
+      "battery": {
+        "soc": 63,
+        "powerKw": 0
+      },
+      "baseload": {
+        "main-building": 0,
+        "pab": 0,
+        "akian": 0
+      },
+      "demandTargetKw": 51,
+      "devices": {
+        "hvac-admin": {
+          "state": "off",
+          "powerKw": 0,
+          "props": {
+            "mode": "off"
+          }
+        },
+        "hvac-f4": {
+          "powerKw": 2.84
+        }
+      }
+    }
+  },
+  {
+    "id": "peak-price",
+    "name": "Peak Electricity Price",
+    "description": "The tariff moves from $0.08 to the $0.16 evening peak.",
+    "expectedInsightId": "peak-discharge",
+    "changes": {
+      "price": {
+        "currentUsdPerKwh": 0.16
+      },
+      "battery": {
+        "powerKw": 0
+      },
+      "demandTargetKw": 124
+    }
+  },
+  {
+    "id": "device-disconnected",
+    "name": "Device Disconnected",
+    "description": "SmartPlug-04 in Office 301 stops reporting.",
+    "changes": {
+      "devices": {
+        "smartplug-04": {
+          "status": "disconnected"
+        }
+      }
+    }
+  },
+  {
+    "id": "unexpected-consumption",
+    "name": "Unexpected Consumption",
+    "description": "Floor 3 HVAC rises 27% above its expected power while occupancy stays normal.",
+    "expectedInsightId": "floor3-hvac-warning",
+    "changes": {
+      "devices": {
+        "hvac-f3": {
+          "state": "on",
+          "powerKw": 10.16,
+          "props": {
+            "mode": "comfort"
+          }
+        }
+      }
+    }
+  },
+  {
+    "id": "high-occupancy",
+    "name": "High Occupancy Event",
+    "description": "The Paramaz Avedisian lecture hall fills. Expectation rises with it.",
+    "expectedInsightId": "high-occupancy-normal",
+    "changes": {
+      "occupancy": {
+        "pab-hall": 120
+      },
+      "context": {
+        "highOccupancyEvent": true
+      },
+      "devices": {
+        "hvac-pab": {
+          "state": "on",
+          "powerKw": 5.6,
+          "props": {
+            "mode": "comfort"
+          }
+        },
+        "light-pab": {
+          "state": "on"
+        }
+      }
+    }
+  },
+  {
+    "id": "registration-period",
+    "name": "Student Registration Period",
+    "description": "Registration context explains a high but expected day: 1,760 kWh against 1,820 kWh expected.",
+    "expectedInsightId": "registration-normal",
+    "changes": {
+      "context": {
+        "registrationPeriod": true,
+        "highOccupancyEvent": true,
+        "teachingScheduleActive": true,
+        "outdoorTempC": 8,
+        "dailyExpectedKwh": 1820,
+        "dailyActualKwh": 1760,
+        "deviationLabel": "6.2% below expected"
+      },
+      "occupancy": {
+        "admin-101": 40,
+        "lobby": 55
+      }
+    }
+  },
+  {
+    "id": "battery-nearly-full",
+    "name": "Battery Nearly Full",
+    "description": "State of charge reaches 96%, so the charge rule no longer applies.",
+    "expectedInsightId": "battery-full",
+    "changes": {
+      "battery": {
+        "soc": 96,
+        "powerKw": 0
+      }
+    }
+  }
+]

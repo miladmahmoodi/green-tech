@@ -1,0 +1,26 @@
+[
+  {
+    "id": "main-building",
+    "campusId": "aua",
+    "name": "Main Building",
+    "code": "MB",
+    "baseloadKw": 38.04,
+    "areaM2": 9200
+  },
+  {
+    "id": "pab",
+    "campusId": "aua",
+    "name": "Paramaz Avedisian Building",
+    "code": "PAB",
+    "baseloadKw": 18.4,
+    "areaM2": 7400
+  },
+  {
+    "id": "akian",
+    "campusId": "aua",
+    "name": "Akian Building",
+    "code": "AK",
+    "baseloadKw": 9.6,
+    "areaM2": 3100
+  }
+]

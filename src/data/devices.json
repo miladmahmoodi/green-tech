@@ -1,0 +1,1480 @@
+[
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:58.000Z",
+    "id": "hvac-204",
+    "name": "HVAC-204",
+    "type": "hvac",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 4.2,
+    "props": {
+      "mode": "comfort",
+      "setpointC": 22,
+      "currentTempC": 22.4,
+      "ecoPowerKw": 1.9,
+      "comfortPowerKw": 4.2,
+      "standbyPowerKw": 0.05,
+      "schedule": [
+        "08:00–20:00"
+      ],
+      "expectedPowerKw": 4.2
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:56.000Z",
+    "id": "light-204-01",
+    "name": "Light-204-01",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:53.000Z",
+    "id": "light-204-02",
+    "name": "Light-204-02",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "manual",
+    "controllable": false,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:52.000Z",
+    "id": "light-204-03",
+    "name": "Light-204-03",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:51.000Z",
+    "id": "light-204-04",
+    "name": "Light-204-04",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:50.000Z",
+    "id": "light-204-05",
+    "name": "Light-204-05",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:49.000Z",
+    "id": "light-204-06",
+    "name": "Light-204-06",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:48.000Z",
+    "id": "light-204-07",
+    "name": "Light-204-07",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:47.000Z",
+    "id": "light-204-08",
+    "name": "Light-204-08",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:46.000Z",
+    "id": "light-204-09",
+    "name": "Light-204-09",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:45.000Z",
+    "id": "light-204-10",
+    "name": "Light-204-10",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:44.000Z",
+    "id": "light-204-11",
+    "name": "Light-204-11",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:43.000Z",
+    "id": "light-204-12",
+    "name": "Light-204-12",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:42.000Z",
+    "id": "light-204-13",
+    "name": "Light-204-13",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:41.000Z",
+    "id": "light-204-14",
+    "name": "Light-204-14",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.12,
+    "props": {
+      "ratedPowerKw": 0.12
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:49.000Z",
+    "id": "pc-204-01",
+    "name": "PC-204-01",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:48.000Z",
+    "id": "pc-204-02",
+    "name": "PC-204-02",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:47.000Z",
+    "id": "pc-204-03",
+    "name": "PC-204-03",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:46.000Z",
+    "id": "pc-204-04",
+    "name": "PC-204-04",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:45.000Z",
+    "id": "pc-204-05",
+    "name": "PC-204-05",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:44.000Z",
+    "id": "pc-204-06",
+    "name": "PC-204-06",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:43.000Z",
+    "id": "pc-204-07",
+    "name": "PC-204-07",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:42.000Z",
+    "id": "pc-204-08",
+    "name": "PC-204-08",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:41.000Z",
+    "id": "pc-204-09",
+    "name": "PC-204-09",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:40.000Z",
+    "id": "pc-204-10",
+    "name": "PC-204-10",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:39.000Z",
+    "id": "pc-204-11",
+    "name": "PC-204-11",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:38.000Z",
+    "id": "pc-204-12",
+    "name": "PC-204-12",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:37.000Z",
+    "id": "pc-204-13",
+    "name": "PC-204-13",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:36.000Z",
+    "id": "pc-204-14",
+    "name": "PC-204-14",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:35.000Z",
+    "id": "pc-204-15",
+    "name": "PC-204-15",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:34.000Z",
+    "id": "pc-204-16",
+    "name": "PC-204-16",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:52.000Z",
+    "id": "pc-204-17",
+    "name": "PC-204-17",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:32.000Z",
+    "id": "pc-204-18",
+    "name": "PC-204-18",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:31.000Z",
+    "id": "pc-204-19",
+    "name": "PC-204-19",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:50.000Z",
+    "id": "pc-204-20",
+    "name": "PC-204-20",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:49.000Z",
+    "id": "pc-204-21",
+    "name": "PC-204-21",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:48.000Z",
+    "id": "pc-204-22",
+    "name": "PC-204-22",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:47.000Z",
+    "id": "pc-204-23",
+    "name": "PC-204-23",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:46.000Z",
+    "id": "pc-204-24",
+    "name": "PC-204-24",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:45.000Z",
+    "id": "pc-204-25",
+    "name": "PC-204-25",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:44.000Z",
+    "id": "pc-204-26",
+    "name": "PC-204-26",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:43.000Z",
+    "id": "pc-204-27",
+    "name": "PC-204-27",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:42.000Z",
+    "id": "pc-204-28",
+    "name": "PC-204-28",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:41.000Z",
+    "id": "pc-204-29",
+    "name": "PC-204-29",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:40.000Z",
+    "id": "pc-204-30",
+    "name": "PC-204-30",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:39.000Z",
+    "id": "pc-204-31",
+    "name": "PC-204-31",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:38.000Z",
+    "id": "pc-204-32",
+    "name": "PC-204-32",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.08125,
+    "props": {
+      "ratedPowerKw": 0.08125
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:48.000Z",
+    "id": "smartplug-204-01",
+    "name": "SmartPlug-204-01",
+    "type": "smart_plug",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0.35,
+    "props": {
+      "plugCategory": "Lab equipment",
+      "ratedPowerKw": 0.8,
+      "energyTodayKwh": 2.4
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": false,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:58.000Z",
+    "id": "powermeter-204",
+    "name": "PowerMeter-204",
+    "type": "electricity_meter",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "lab-204",
+    "powerKw": 0,
+    "props": {
+      "energyTodayKwh": 61.4
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:57.000Z",
+    "id": "hvac-admin",
+    "name": "HVAC-Admin",
+    "type": "hvac",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "admin-101",
+    "powerKw": 6.4,
+    "props": {
+      "mode": "comfort",
+      "setpointC": 22.5,
+      "currentTempC": 23.1,
+      "ecoPowerKw": 3.6,
+      "comfortPowerKw": 6.4,
+      "standbyPowerKw": 0.08,
+      "schedule": [
+        "07:30–19:00"
+      ],
+      "expectedPowerKw": 5.1
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:56.000Z",
+    "id": "hvac-f3",
+    "name": "HVAC-Floor3",
+    "type": "hvac",
+    "buildingId": "main-building",
+    "floorId": "main-floor-3",
+    "roomId": "classroom-301",
+    "powerKw": 8,
+    "props": {
+      "mode": "auto",
+      "setpointC": 22,
+      "currentTempC": 23.6,
+      "ecoPowerKw": 4.2,
+      "comfortPowerKw": 8,
+      "standbyPowerKw": 0.08,
+      "schedule": [
+        "08:00–21:00"
+      ],
+      "expectedPowerKw": 8
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "hvac-f4",
+    "name": "HVAC-Floor4",
+    "type": "hvac",
+    "buildingId": "main-building",
+    "floorId": "main-floor-4",
+    "roomId": "faculty-401",
+    "powerKw": 3.4,
+    "props": {
+      "mode": "auto",
+      "setpointC": 21.5,
+      "currentTempC": 21.8,
+      "ecoPowerKw": 1.8,
+      "comfortPowerKw": 3.4,
+      "standbyPowerKw": 0.05,
+      "schedule": [
+        "08:00–18:00"
+      ],
+      "expectedPowerKw": 3.2
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "heat-main",
+    "name": "Heating-Main",
+    "type": "heating",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "plant-main",
+    "powerKw": 2.2,
+    "props": {
+      "mode": "auto",
+      "setpointC": 21,
+      "currentTempC": 20.6,
+      "ecoPowerKw": 1.1,
+      "comfortPowerKw": 2.2,
+      "schedule": [
+        "06:00–10:00",
+        "16:00–20:00"
+      ]
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "scheduled",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "wh-01",
+    "name": "Water Heater #01",
+    "type": "water_heater",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "plant-main",
+    "powerKw": 2.4,
+    "props": {
+      "currentTempC": 58,
+      "targetTempC": 60,
+      "schedule": [
+        "06:00–08:00",
+        "18:00–20:00"
+      ],
+      "energyTodayKwh": 9.6,
+      "ratedPowerKw": 4
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "scheduled",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:55.000Z",
+    "id": "wh-02",
+    "name": "Water Heater #02",
+    "type": "water_heater",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "plant-main",
+    "powerKw": 3.8,
+    "props": {
+      "currentTempC": 61,
+      "targetTempC": 60,
+      "schedule": [
+        "06:00–08:00",
+        "18:00–20:00"
+      ],
+      "energyTodayKwh": 14.2,
+      "ratedPowerKw": 4.5
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": false,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "elev-main",
+    "name": "Elevator-Main",
+    "type": "elevator",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "elevator-main",
+    "powerKw": 1.5,
+    "props": {
+      "tripsToday": 186,
+      "peakKw": 7.2,
+      "energyTodayKwh": 18.4
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": false,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "meter-main",
+    "name": "Main Building Meter",
+    "type": "electricity_meter",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "lobby",
+    "powerKw": 0,
+    "props": {
+      "energyTodayKwh": 742
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "light-admin",
+    "name": "Admin Lights",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "admin-101",
+    "powerKw": 1.1,
+    "props": {
+      "ratedPowerKw": 1.1
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "light-lobby",
+    "name": "Lobby Lights",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "lobby",
+    "powerKw": 0.8,
+    "props": {
+      "ratedPowerKw": 0.8
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "light-201",
+    "name": "Light-201",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-2",
+    "roomId": "classroom-201",
+    "powerKw": 0.7,
+    "props": {
+      "ratedPowerKw": 0.7
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "light-301",
+    "name": "Light-301",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-3",
+    "roomId": "classroom-301",
+    "powerKw": 0.64,
+    "props": {
+      "ratedPowerKw": 0.64
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "light-305",
+    "name": "Light-305",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-3",
+    "roomId": "seminar-305",
+    "powerKw": 0.36,
+    "props": {
+      "ratedPowerKw": 0.36
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "light-401",
+    "name": "Faculty Lights",
+    "type": "lighting",
+    "buildingId": "main-building",
+    "floorId": "main-floor-4",
+    "roomId": "faculty-401",
+    "powerKw": 0.9,
+    "props": {
+      "ratedPowerKw": 0.9
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "light-pab",
+    "name": "Lecture Hall Lights",
+    "type": "lighting",
+    "buildingId": "pab",
+    "floorId": "pab-floor-1",
+    "roomId": "pab-hall",
+    "powerKw": 1.4,
+    "props": {
+      "ratedPowerKw": 1.4
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "light-pab-labs",
+    "name": "Engineering Lab Lights",
+    "type": "lighting",
+    "buildingId": "pab",
+    "floorId": "pab-floor-2",
+    "roomId": "pab-labs",
+    "powerKw": 0.8,
+    "props": {
+      "ratedPowerKw": 0.8
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "light-gallery",
+    "name": "Gallery Lights",
+    "type": "lighting",
+    "buildingId": "akian",
+    "floorId": "akian-floor-1",
+    "roomId": "gallery",
+    "powerKw": 0.7,
+    "props": {
+      "ratedPowerKw": 0.7
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "light-reading",
+    "name": "Reading Room Lights",
+    "type": "lighting",
+    "buildingId": "akian",
+    "floorId": "akian-floor-2",
+    "roomId": "reading-room",
+    "powerKw": 0.55,
+    "props": {
+      "ratedPowerKw": 0.55
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "manual",
+    "controllable": true,
+    "state": "off",
+    "lastSeen": "2026-10-04T06:28:00.000Z",
+    "id": "smartplug-04",
+    "name": "SmartPlug-04",
+    "type": "smart_plug",
+    "buildingId": "main-building",
+    "floorId": "main-floor-3",
+    "roomId": "office-301",
+    "powerKw": 0,
+    "props": {
+      "plugCategory": "Printer",
+      "ratedPowerKw": 0.84,
+      "energyTodayKwh": 1.1
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "plug-coffee",
+    "name": "SmartPlug-Coffee",
+    "type": "smart_plug",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "admin-101",
+    "powerKw": 0.92,
+    "props": {
+      "plugCategory": "Coffee machine",
+      "ratedPowerKw": 1.4,
+      "energyTodayKwh": 3.2
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "plug-monitor",
+    "name": "SmartPlug-Monitor",
+    "type": "smart_plug",
+    "buildingId": "main-building",
+    "floorId": "main-floor-3",
+    "roomId": "office-301",
+    "powerKw": 0.04,
+    "props": {
+      "plugCategory": "Monitor",
+      "ratedPowerKw": 0.06,
+      "energyTodayKwh": 0.3
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "off",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "plug-tv",
+    "name": "SmartPlug-TV",
+    "type": "smart_plug",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "lobby",
+    "powerKw": 0,
+    "props": {
+      "plugCategory": "TV",
+      "ratedPowerKw": 0.18,
+      "energyTodayKwh": 0.4
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "hvac-pab",
+    "name": "HVAC-PAB",
+    "type": "hvac",
+    "buildingId": "pab",
+    "floorId": "pab-floor-1",
+    "roomId": "pab-hall",
+    "powerKw": 5.6,
+    "props": {
+      "mode": "auto",
+      "setpointC": 22,
+      "currentTempC": 22.2,
+      "ecoPowerKw": 3.1,
+      "comfortPowerKw": 5.6,
+      "standbyPowerKw": 0.06,
+      "schedule": [
+        "08:00–21:00"
+      ],
+      "expectedPowerKw": 5.4
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "off",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "cool-pab",
+    "name": "Cooling-PAB",
+    "type": "cooling",
+    "buildingId": "pab",
+    "floorId": "pab-floor-2",
+    "roomId": "pab-labs",
+    "powerKw": 0,
+    "props": {
+      "mode": "off",
+      "setpointC": 23,
+      "currentTempC": 21.4,
+      "ecoPowerKw": 1.2,
+      "comfortPowerKw": 2.4,
+      "schedule": [
+        "12:00–16:00"
+      ]
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "hvac-akian",
+    "name": "HVAC-Akian",
+    "type": "hvac",
+    "buildingId": "akian",
+    "floorId": "akian-floor-2",
+    "roomId": "reading-room",
+    "powerKw": 3.1,
+    "props": {
+      "mode": "eco",
+      "setpointC": 21,
+      "currentTempC": 21.2,
+      "ecoPowerKw": 3.1,
+      "comfortPowerKw": 4.4,
+      "standbyPowerKw": 0.05,
+      "schedule": [
+        "09:00–20:00"
+      ],
+      "expectedPowerKw": 3
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": false,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "elev-pab",
+    "name": "Elevator-PAB",
+    "type": "elevator",
+    "buildingId": "pab",
+    "floorId": "pab-floor-1",
+    "roomId": "elevator-pab",
+    "powerKw": 0.9,
+    "props": {
+      "tripsToday": 94,
+      "peakKw": 6.4,
+      "energyTodayKwh": 8.1
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": false,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "elev-akian",
+    "name": "Elevator-Akian",
+    "type": "elevator",
+    "buildingId": "akian",
+    "floorId": "akian-floor-1",
+    "roomId": "elevator-akian",
+    "powerKw": 0.4,
+    "props": {
+      "tripsToday": 41,
+      "peakKw": 4.1,
+      "energyTodayKwh": 3.3
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "pcs-pab",
+    "name": "Engineering Workstations",
+    "type": "computer",
+    "buildingId": "pab",
+    "floorId": "pab-floor-2",
+    "roomId": "pab-labs",
+    "powerKw": 1.8,
+    "props": {
+      "groupSize": 12,
+      "ratedPowerKw": 1.8
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": true,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "pcs-faculty",
+    "name": "Faculty Workstations",
+    "type": "computer",
+    "buildingId": "main-building",
+    "floorId": "main-floor-4",
+    "roomId": "faculty-401",
+    "powerKw": 0.72,
+    "props": {
+      "groupSize": 8,
+      "ratedPowerKw": 0.96
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": false,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "solar-array",
+    "name": "Roof Array A",
+    "type": "solar_panel",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "solar-yard",
+    "powerKw": 0,
+    "props": {
+      "ratedPowerKw": 120
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": false,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "inverter-1",
+    "name": "Inverter 1",
+    "type": "solar_inverter",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "solar-yard",
+    "powerKw": 0,
+    "props": {
+      "ratedPowerKw": 100
+    }
+  },
+  {
+    "status": "connected",
+    "controlMode": "automatic",
+    "controllable": false,
+    "state": "on",
+    "lastSeen": "2026-10-04T06:29:54.000Z",
+    "id": "battery-1",
+    "name": "Campus Battery",
+    "type": "battery",
+    "buildingId": "main-building",
+    "floorId": "main-floor-1",
+    "roomId": "solar-yard",
+    "powerKw": 0,
+    "props": {
+      "ratedPowerKw": 60
+    }
+  }
+]

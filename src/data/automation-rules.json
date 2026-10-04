@@ -1,0 +1,140 @@
+[
+  {
+    "id": "rule-empty-lab",
+    "name": "Empty lab after hours",
+    "enabled": true,
+    "priority": 1,
+    "when": [
+      {
+        "metric": "occupancy.lab-204",
+        "op": "eq",
+        "value": 0
+      },
+      {
+        "metric": "clock.hour",
+        "op": "gte",
+        "value": 20
+      }
+    ],
+    "then": [
+      {
+        "label": "Turn OFF unused lights",
+        "plan": {
+          "type": "set_devices",
+          "filter": {
+            "roomId": "lab-204",
+            "type": "lighting",
+            "controllable": true
+          },
+          "patch": {
+            "state": "off",
+            "powerKw": 0
+          }
+        }
+      },
+      {
+        "label": "Turn OFF inactive computers",
+        "plan": {
+          "type": "set_devices",
+          "filter": {
+            "roomId": "lab-204",
+            "type": "computer",
+            "controllable": true
+          },
+          "patch": {
+            "state": "off",
+            "powerKw": 0
+          }
+        }
+      },
+      {
+        "label": "Set HVAC → Eco Mode",
+        "plan": {
+          "type": "set_device",
+          "id": "hvac-204",
+          "patch": {
+            "powerKw": 1.9,
+            "props": {
+              "mode": "eco"
+            }
+          }
+        }
+      }
+    ],
+    "lastExecution": "2026-10-03T20:05:00+04:00",
+    "history": [
+      {
+        "at": "2026-10-03T20:05:00+04:00",
+        "result": "Applied. Lab 204 entered Eco. 13 lights and 32 computers switched off."
+      },
+      {
+        "at": "2026-10-02T20:04:00+04:00",
+        "result": "Applied. Lab 204 was already mostly idle."
+      }
+    ]
+  },
+  {
+    "id": "rule-solar-charge",
+    "name": "Charge from solar surplus",
+    "enabled": true,
+    "priority": 2,
+    "when": [
+      {
+        "metric": "solar.surplusKw",
+        "op": "gt",
+        "value": 20
+      },
+      {
+        "metric": "battery.soc",
+        "op": "lt",
+        "value": 90
+      }
+    ],
+    "then": [
+      {
+        "label": "Charge Battery",
+        "plan": {
+          "type": "set_battery",
+          "soc": 74,
+          "powerKw": -25
+        }
+      }
+    ],
+    "lastExecution": "2026-10-03T12:10:00+04:00",
+    "history": [
+      {
+        "at": "2026-10-03T12:10:00+04:00",
+        "result": "Charged at 25 kW for the midday surplus window."
+      }
+    ]
+  },
+  {
+    "id": "rule-peak-reserve",
+    "name": "Hold battery for the peak",
+    "enabled": true,
+    "priority": 3,
+    "when": [
+      {
+        "metric": "price.current",
+        "op": "gte",
+        "value": 0.16
+      },
+      {
+        "metric": "battery.soc",
+        "op": "gt",
+        "value": 30
+      }
+    ],
+    "then": [
+      {
+        "label": "Discharge battery to the building",
+        "plan": {
+          "type": "set_battery",
+          "powerKw": 30
+        }
+      }
+    ],
+    "lastExecution": null,
+    "history": []
+  }
+]
