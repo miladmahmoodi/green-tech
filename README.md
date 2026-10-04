@@ -55,3 +55,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `npm start` | Serve a previous production build |
 
 CI on `master` and pull requests runs lint, `tsc --noEmit`, and the production build. Pull requests get a Vercel preview. Pushes to `master` deploy to production.
+
+## License
+
+[MIT](LICENSE) © 2026 Milad Mahmoodi
