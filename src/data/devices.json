@@ -1190,10 +1190,10 @@
     "state": "on",
     "lastSeen": "2026-10-04T06:29:54.000Z",
     "id": "light-reading",
-    "name": "Reading Room Lights",
+    "name": "Library Lights",
     "type": "lighting",
     "buildingId": "akian",
-    "floorId": "akian-floor-2",
+    "floorId": "akian-floor-1",
     "roomId": "reading-room",
     "powerKw": 0.55,
     "props": {
@@ -1336,7 +1336,7 @@
     "name": "HVAC-Akian",
     "type": "hvac",
     "buildingId": "akian",
-    "floorId": "akian-floor-2",
+    "floorId": "akian-floor-1",
     "roomId": "reading-room",
     "powerKw": 3.1,
     "props": {

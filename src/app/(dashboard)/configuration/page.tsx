@@ -11,7 +11,7 @@ const TABS = [
   ["campus", "Campus"],
   ["devices", "Devices"],
   ["types", "Types"],
-  ["tariffs", "Tariffs"],
+  ["tariffs", "Prices"],
   ["schedules", "Schedules"],
   ["occupancy", "Occupancy"],
   ["policies", "Policies"],

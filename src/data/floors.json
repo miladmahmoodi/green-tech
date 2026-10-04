@@ -38,13 +38,13 @@
   {
     "id": "akian-floor-1",
     "buildingId": "akian",
-    "name": "Floor 1 · Gallery",
+    "name": "Floor 1 · Gallery & Library",
     "level": 1
   },
   {
     "id": "akian-floor-2",
     "buildingId": "akian",
-    "name": "Floor 2 · Reading",
+    "name": "Floor 2",
     "level": 2
   }
 ]

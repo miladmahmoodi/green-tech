@@ -5,6 +5,7 @@ import { AlertCard } from "@/components/alerts/alert-card";
 import { useEnergy } from "@/components/energy/use-energy";
 import { DeviceControls } from "@/components/devices/device-controls";
 import { ConnectivityBadge, DeviceStateBadge } from "@/components/devices/badges";
+import { BuildingFloorHeat } from "@/components/floor-plan/building-floor-heat";
 import { BuildingStack } from "@/components/floor-plan/building-stack";
 import { FloorPlanView } from "@/components/floor-plan/floor-plan-view";
 import { Card } from "@/components/ui/card";
@@ -31,15 +32,6 @@ export function CampusExplorer({ path }: { path: string[] }) {
     floor ? { href: `/campus/${building?.id}/${floor.id}`, label: floor.name } : null,
     room ? { href: `/campus/${building?.id}/${floor?.id}/${room.id}`, label: room.name } : null,
   ].filter(Boolean) as { href: string; label: string }[];
-
-  let children: { href: string; title: string; meta: string }[] = [];
-  if (!building) {
-    children = snapshot.buildings.map((item) => ({ href: `/campus/${item.id}`, title: item.name, meta: formatPower(derived.powerByBuilding[item.id] ?? 0) }));
-  } else if (!floor) {
-    children = snapshot.floors.filter((item) => item.buildingId === building.id).map((item) => ({ href: `/campus/${building.id}/${item.id}`, title: item.name, meta: formatPower(derived.powerByFloor[item.id] ?? 0) }));
-  } else if (!room) {
-    children = snapshot.rooms.filter((item) => item.floorId === floor.id).map((item) => ({ href: `/campus/${building.id}/${floor.id}/${item.id}`, title: item.name, meta: `${derived.peopleByRoom[item.id] ?? 0} people · ${formatPower(derived.powerByRoom[item.id] ?? 0)}` }));
-  }
 
   const scopePower = room ? derived.powerByRoom[room.id] ?? 0 : floor ? derived.powerByFloor[floor.id] ?? 0 : building ? derived.powerByBuilding[building.id] ?? 0 : derived.campusPowerKw;
   const scopePeople = room
@@ -78,17 +70,22 @@ export function CampusExplorer({ path }: { path: string[] }) {
         <p className="mb-3 text-xs text-zinc-500">{derived.statusLabel} · today {formatEnergy(derived.actualKwh)}</p>
         <ActualExpectedChart data={room || floor ? series.map((point) => ({ ...point, actual: point.actual * (scopePower / Math.max(derived.campusPowerKw, 1)), expected: point.expected * (scopePower / Math.max(derived.campusPowerKw, 1)), baseline: point.baseline * (scopePower / Math.max(derived.campusPowerKw, 1)) })) : series} />
       </Card>
-      {!building && children.length > 0 ? (
+      {!building ? (
         <div className="grid gap-2 md:grid-cols-2">
-          {children.map((child) => (
-            <Link key={child.href} href={child.href} className="rounded-xl border border-zinc-200 bg-white px-4 py-3 hover:border-zinc-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 dark:border-zinc-800 dark:bg-zinc-900">
-              <p className="font-medium">{child.title}</p>
-              <p className="num text-sm text-zinc-500">{child.meta}</p>
+          {snapshot.buildings.map((item) => (
+            <Link key={item.id} href={`/campus/${item.id}`} className="rounded-xl border border-zinc-200 bg-white px-4 py-3 hover:border-zinc-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 dark:border-zinc-800 dark:bg-zinc-900">
+              <p className="font-medium">{item.name}</p>
+              <p className="num text-sm text-zinc-500">{formatPower(derived.powerByBuilding[item.id] ?? 0)}</p>
             </Link>
           ))}
         </div>
       ) : null}
-      {building && !floor ? <BuildingStack buildingName={building.name} floors={snapshot.floors.filter((item) => item.buildingId === building.id)} plans={plans} /> : null}
+      {building && !floor ? (
+        <>
+          <BuildingFloorHeat floors={snapshot.floors.filter((item) => item.buildingId === building.id)} plans={plans} />
+          <BuildingStack buildingName={building.name} floors={snapshot.floors.filter((item) => item.buildingId === building.id)} plans={plans} />
+        </>
+      ) : null}
       {floor && floorPlan ? <FloorPlanView plan={floorPlan} initialZoneId={room?.id} /> : null}
       {room ? (
         <div className="space-y-3">

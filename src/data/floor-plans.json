@@ -75,8 +75,9 @@
     "width": 1000,
     "height": 640,
     "zones": [
-      { "id": "gallery", "name": "Gallery", "type": "common", "geometry": { "x": 36, "y": 36, "width": 720, "height": 520 }, "deviceIds": ["light-gallery"] },
-      { "id": "elevator-akian", "name": "Elevator Core", "type": "elevator", "geometry": { "x": 776, "y": 36, "width": 188, "height": 220 }, "deviceIds": ["elev-akian"] }
+      { "id": "gallery", "name": "Gallery", "type": "common", "geometry": { "x": 36, "y": 36, "width": 700, "height": 240 }, "deviceIds": ["light-gallery"] },
+      { "id": "reading-room", "name": "Library", "type": "library", "geometry": { "x": 36, "y": 364, "width": 700, "height": 192 }, "deviceIds": ["hvac-akian", "light-reading"] },
+      { "id": "elevator-akian", "name": "Elevator Core", "type": "elevator", "geometry": { "x": 756, "y": 36, "width": 188, "height": 520 }, "deviceIds": ["elev-akian"] }
     ]
   },
   {
@@ -85,8 +86,6 @@
     "floorPlan": "/floor-plans/akian-floor-2.svg",
     "width": 1000,
     "height": 640,
-    "zones": [
-      { "id": "reading-room", "name": "Reading Room", "type": "library", "geometry": { "x": 36, "y": 36, "width": 928, "height": 520 }, "deviceIds": ["hvac-akian", "light-reading"] }
-    ]
+    "zones": []
   }
 ]

@@ -136,9 +136,9 @@
   },
   {
     "id": "reading-room",
-    "floorId": "akian-floor-2",
+    "floorId": "akian-floor-1",
     "buildingId": "akian",
-    "name": "Reading Room",
+    "name": "Library",
     "zoneType": "library",
     "areaM2": 260,
     "capacity": 50

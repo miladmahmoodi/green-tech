@@ -45,9 +45,12 @@ export function Topbar() {
           {navGroups.map((group) => (
             <div key={group.label} className="mb-2">
               <p className="px-2 text-[10px] uppercase tracking-[0.16em] text-zinc-400">{group.label}</p>
-              {group.items.map((item) => (
-                <Link key={item.href} href={item.href} className="block rounded-md px-2 py-2 text-sm" onClick={() => setNavOpen(false)}>{item.label}</Link>
-              ))}
+              {group.items.map((item) => {
+                const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+                return (
+                  <Link key={item.href} href={item.href} aria-current={active ? "page" : undefined} className={`block rounded-md px-2 py-2 text-sm ${active ? "bg-zinc-100 font-medium dark:bg-zinc-900" : ""}`} onClick={() => setNavOpen(false)}>{item.label}</Link>
+                );
+              })}
             </div>
           ))}
         </nav>

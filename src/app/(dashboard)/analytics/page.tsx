@@ -7,7 +7,13 @@ import { Card } from "@/components/ui/card";
 import { catalogTelemetry, liveSeries } from "@/lib/engine/views";
 import { deviceTypeLabel, formatMoney } from "@/lib/format";
 import type { DeviceType } from "@/types/energy";
+import dynamic from "next/dynamic";
 import { useMemo, useState } from "react";
+
+const PowerHeatMap = dynamic(() => import("@/components/analytics/power-heat-map").then((mod) => mod.PowerHeatMap), {
+  ssr: false,
+  loading: () => <div className="h-[420px] animate-pulse rounded-xl bg-zinc-200 dark:bg-zinc-900" />,
+});
 
 export default function AnalyticsPage() {
   const { snapshot, derived } = useEnergy();
@@ -62,6 +68,11 @@ export default function AnalyticsPage() {
         <Card className="p-4"><p className="text-xs text-zinc-500">Peak in view</p><p className="num mt-1 text-xl">{history[history.length - 1]?.peakKw ?? 0} kW</p></Card>
         <Card className="p-4"><p className="text-xs text-zinc-500">CO₂</p><p className="num mt-1 text-xl">{co2.toLocaleString("en-US")} kg</p></Card>
       </div>
+      <Card className="p-4">
+        <h2 className="mb-1 text-sm font-medium">Power heatmap</h2>
+        <p className="mb-3 text-xs text-zinc-500">{buildingId === "all" ? "Live power for every building, colored against the hottest building on campus." : "The building you picked, still colored against the hottest building on campus."}</p>
+        <PowerHeatMap buildings={snapshot.buildings} powerByBuilding={derived.powerByBuilding} buildingId={buildingId} />
+      </Card>
       <Card className="p-4"><h2 className="mb-3 text-sm font-medium">Actual vs expected</h2><ActualExpectedChart data={liveSeries(snapshot, derived, seriesKey)} /></Card>
       <div className="grid gap-3 lg:grid-cols-2">
         <Card className="p-4"><h2 className="mb-3 text-sm font-medium">Energy by building</h2><BreakdownBarChart data={snapshot.buildings.map((building) => ({ name: building.code, powerKw: Math.round((derived.powerByBuilding[building.id] ?? 0) * 10) / 10 }))} /></Card>

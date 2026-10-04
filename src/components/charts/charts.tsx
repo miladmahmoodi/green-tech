@@ -1,5 +1,6 @@
 "use client";
 
+import { formatPower } from "@/lib/format";
 import type { HistoryPoint, TelemetryPoint } from "@/types/energy";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -42,21 +43,54 @@ export function ActualExpectedChart({ data }: { data: TelemetryPoint[] }) {
   );
 }
 
-export function BreakdownBarChart({ data }: { data: { name: string; powerKw: number }[] }) {
+export function RoomPowerChart({ data, onSelect }: { data: { id: string; name: string; powerKw: number; expectedKw: number }[]; onSelect?: (id: string) => void }) {
   const theme = useChartTheme();
-  const tick = { stroke: theme.axis, fontSize: 11, fill: theme.axis };
+  const rows = [...data].sort((left, right) => right.powerKw - left.powerKw);
+  const tick = { stroke: theme.axis, fontSize: 12, fill: theme.axis };
+  if (rows.length === 0) return <p className="p-4 text-sm text-zinc-500">No rooms on this floor.</p>;
   return (
-    <div className="h-56">
+    <div className="h-full min-h-[420px]">
       <ResponsiveContainer width="100%" height="100%">
-        <ComposedChart data={data} layout="vertical" margin={{ left: 16, right: 8 }}>
+        <ComposedChart data={rows} layout="vertical" margin={{ top: 16, right: 24, left: 8, bottom: 8 }}>
           <CartesianGrid stroke={theme.grid} horizontal={false} />
           <XAxis type="number" tick={tick} unit=" kW" />
-          <YAxis type="category" dataKey="name" tick={tick} width={120} />
-          <Tooltip contentStyle={chartTooltip(theme)} />
-          <Bar dataKey="powerKw" name="Power" fill="#60a5fa" radius={4} barSize={14} />
+          <YAxis type="category" dataKey="name" width={128} tick={tick} />
+          <Tooltip contentStyle={chartTooltip(theme)} formatter={(value, name) => [typeof value === "number" ? formatPower(value) : value, name]} />
+          <Legend />
+          <Bar dataKey="expectedKw" name="Expected" fill="#a78bfa" barSize={16} radius={[0, 4, 4, 0]} />
+          <Bar dataKey="powerKw" name="Actual" fill="#3b82f6" barSize={16} radius={[0, 4, 4, 0]} cursor="pointer" onClick={(entry) => { const point = entry as { id?: string; payload?: { id?: string } }; const id = point.payload?.id ?? point.id; if (id) onSelect?.(id); }} />
         </ComposedChart>
       </ResponsiveContainer>
     </div>
+  );
+}
+
+export function BreakdownBarChart({ data }: { data: { name: string; powerKw: number }[] }) {
+  const ranked = [...data].sort((left, right) => right.powerKw - left.powerKw);
+  const peak = Math.max(...ranked.map((item) => item.powerKw), 0);
+  const total = ranked.reduce((sum, item) => sum + item.powerKw, 0);
+  if (ranked.length === 0) return <p className="text-sm text-zinc-500">No load in this group.</p>;
+  return (
+    <ul className="space-y-3">
+      {ranked.map((item, index) => {
+        const width = peak === 0 ? 0 : (item.powerKw / peak) * 100;
+        const share = total === 0 ? 0 : Math.round((item.powerKw / total) * 100);
+        return (
+          <li key={`${item.name}-${index}`}>
+            <div className="mb-1 flex items-baseline justify-between gap-3 text-[13px]">
+              <span className="min-w-0 truncate">{item.name}</span>
+              <span className="num shrink-0 text-zinc-500">
+                <span className="text-zinc-900 dark:text-zinc-100">{formatPower(item.powerKw)}</span>
+                <span className="ml-2">{share}%</span>
+              </span>
+            </div>
+            <div className="h-1.5 overflow-hidden rounded-full bg-zinc-200 dark:bg-zinc-800">
+              <div className="h-full rounded-full bg-blue-500" style={{ width: `${width}%` }} />
+            </div>
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 

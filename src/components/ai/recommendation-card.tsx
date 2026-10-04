@@ -3,12 +3,28 @@
 import { Dialog } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { useEnergyStore } from "@/lib/engine/store";
 import { formatMoney, formatPower } from "@/lib/format";
+import { cn } from "@/lib/utils";
 import type { InsightView } from "@/lib/engine/views";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function RecommendationCard({ insight, onApply }: { insight: InsightView; onApply: (id: string) => void }) {
   const [open, setOpen] = useState(false);
+  const highlight = useEnergyStore((state) => state.highlight);
+  const storyIndex = useEnergyStore((state) => state.storyIndex);
+  const story = useEnergyStore((state) => state.campus.demoStory);
+  const focused = highlight === `insight-${insight.id}`;
+  const stepId = focused ? story[storyIndex]?.id : undefined;
+  const revealSavings = stepId !== "detect" && stepId !== "explain";
+  const previousStep = useRef(stepId);
+
+  useEffect(() => {
+    if (stepId === "explain") setOpen(true);
+    else if (previousStep.current === "explain") setOpen(false);
+    previousStep.current = stepId;
+  }, [stepId]);
+
   return (
     <article id={`insight-${insight.id}`} className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
       <div className="flex items-start justify-between gap-3">
@@ -24,13 +40,17 @@ export function RecommendationCard({ insight, onApply }: { insight: InsightView;
         {insight.occupancy !== null ? <Stat label="Occupancy" value={`${insight.occupancy} people`} /> : null}
         {insight.currentPowerKw !== null ? <Stat label="Current power" value={formatPower(insight.currentPowerKw)} /> : null}
         {insight.wasteKw !== null ? <Stat label="Estimated waste" value={formatPower(insight.wasteKw)} /> : null}
-        <Stat label="Daily saving" value={formatMoney(insight.dailySavingUsd)} />
-        <Stat label="Monthly saving" value={formatMoney(insight.monthlySavingUsd)} />
       </dl>
+      {revealSavings ? (
+        <dl id="insight-savings" className={cn("mt-3 grid grid-cols-2 gap-3 text-sm", stepId === "savings" && "rounded-lg p-2 ring-2 ring-violet-500")}>
+          <Stat label="Daily saving" value={formatMoney(insight.dailySavingUsd)} />
+          <Stat label="Monthly saving" value={formatMoney(insight.monthlySavingUsd)} />
+        </dl>
+      ) : null}
       <div className="mt-4 flex flex-wrap gap-2">
         <Button variant="outline" size="sm" onClick={() => setOpen(true)}>Review</Button>
         {insight.plan ? (
-          <Button size="sm" disabled={insight.applied} onClick={() => onApply(insight.id)}>
+          <Button size="sm" className={cn(stepId === "apply" && "ring-2 ring-violet-500 ring-offset-2")} disabled={insight.applied} onClick={() => onApply(insight.id)}>
             {insight.applied ? "Applied" : "Apply optimization"}
           </Button>
         ) : null}

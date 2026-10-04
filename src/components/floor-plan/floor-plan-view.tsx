@@ -1,15 +1,17 @@
 "use client";
 
-import { liveZones, stateLabel, worstState, type PlanMode, type ZoneLive, type ZoneVisualState } from "@/lib/floor-plan/zone-state";
-import { useEnergy } from "@/components/energy/use-energy";
-import { formatMoney, formatPower } from "@/lib/format";
-import { useEnergyStore } from "@/lib/engine/store";
-import type { FloorPlan } from "@/types/energy";
 import { AlertTriangle, Check, Circle, Sparkles, Unplug, Users } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { toast } from "sonner";
+
+import { RoomPowerChart } from "@/components/charts/charts";
+import { useEnergy } from "@/components/energy/use-energy";
+import { useEnergyStore } from "@/lib/engine/store";
+import { liveZones, stateLabel, worstState, type PlanMode, type ZoneLive, type ZoneVisualState } from "@/lib/floor-plan/zone-state";
+import { formatMoney, formatPower } from "@/lib/format";
+import { FloorPlate } from "@/components/floor-plan/floor-plate";
+import type { FloorPlan } from "@/types/energy";
 
 const MODES: { id: PlanMode; label: string }[] = [
   { id: "energy", label: "Energy" },
@@ -79,8 +81,14 @@ export function FloorPlanView({ plan, initialZoneId }: { plan: FloorPlan; initia
         ))}
       </div>
       <div className="grid gap-3 xl:grid-cols-[minmax(0,1fr)_300px]">
-        <div className="relative overflow-hidden rounded-xl border border-zinc-700 bg-zinc-950">
-          <Image src={plan.floorPlan} alt="" width={plan.width} height={plan.height} className="block h-auto w-full" />
+        {mode === "energy" ? (
+          <div className="min-h-[420px] overflow-hidden rounded-xl border border-zinc-200 bg-white p-2 dark:border-zinc-800 dark:bg-zinc-900">
+            <RoomPowerChart data={zones.map((zone) => ({ id: zone.zone.id, name: zone.zone.name, powerKw: zone.powerKw, expectedKw: zone.expectedKw }))} onSelect={setSelectedId} />
+          </div>
+        ) : (
+        <div className="relative overflow-hidden rounded-xl border border-zinc-300 bg-[#f4fbfb]">
+          <FloorPlate width={plan.width} height={plan.height} zones={plan.zones} />
+          <FloorPlate width={plan.width} height={plan.height} zones={plan.zones} marks />
           {zones.map((zone) => {
             const box = zone.zone.geometry;
             return (
@@ -90,9 +98,14 @@ export function FloorPlanView({ plan, initialZoneId }: { plan: FloorPlan; initia
                 aria-pressed={selectedId === zone.zone.id}
                 onClick={() => setSelectedId(zone.zone.id)}
                 className={`absolute overflow-hidden rounded-md border px-2 py-1.5 text-left text-white backdrop-blur-[2px] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 ${STATE_CLASS[zone.state]} ${selectedId === zone.zone.id ? "ring-2 ring-white" : ""}`}
-                style={{ left: `${(box.x / plan.width) * 100}%`, top: `${(box.y / plan.height) * 100}%`, width: `${(box.width / plan.width) * 100}%`, height: `${(box.height / plan.height) * 100}%` }}
+                style={{
+                  left: `${(box.x / plan.width) * 100}%`,
+                  top: `${(box.y / plan.height) * 100}%`,
+                  width: `${(box.width / plan.width) * 100}%`,
+                  height: `${(box.height / plan.height) * 100}%`,
+                }}
               >
-                <span className="flex items-center gap-1 text-[11px] font-medium leading-tight">
+                <span className="flex max-w-full items-center gap-1 text-[11px] font-medium leading-tight">
                   <StateMark state={zone.state} />
                   <span className="truncate">{zone.zone.name}</span>
                 </span>
@@ -102,6 +115,7 @@ export function FloorPlanView({ plan, initialZoneId }: { plan: FloorPlan; initia
             );
           })}
         </div>
+        )}
         <aside className="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
           {selected ? <ZonePanel zone={selected} onApply={(id) => { const notes = applyInsight(id); if (notes.length === 0) toast.success("Optimization applied"); notes.forEach((note) => toast.message(note)); }} /> : <p className="text-sm text-zinc-500">Select a room to see its energy state, occupancy, and any recommendation. Devices stay in the Devices section.</p>}
         </aside>

@@ -1,14 +1,22 @@
 "use client";
 
 import { ConnectivityBadge, ControlModeBadge, DeviceStateBadge } from "@/components/devices/badges";
+import { blankDeviceDraft, deviceFromDraft, DeviceDialog, type DeviceDraft } from "@/components/devices/device-form";
+import { Button } from "@/components/ui/button";
 import { deviceLocation, devicePower } from "@/lib/engine/model";
+import { useEnergyStore } from "@/lib/engine/store";
 import { deviceTypeLabel, formatAgo, formatPower } from "@/lib/format";
+import { cn } from "@/lib/utils";
 import type { EnergySnapshot } from "@/lib/engine/model";
 import type { Device, DeviceType } from "@/types/energy";
 import { getCoreRowModel, getFilteredRowModel, getSortedRowModel, useReactTable, type ColumnDef } from "@tanstack/react-table";
 import { useMemo, useState } from "react";
+import { toast } from "sonner";
 
 export function DeviceTable({ snapshot, onSelect }: { snapshot: EnergySnapshot; onSelect: (id: string) => void }) {
+  const highlighted = useEnergyStore((state) => state.highlight) === "device-table";
+  const addDevice = useEnergyStore((state) => state.addDevice);
+  const [draft, setDraft] = useState<DeviceDraft | null>(null);
   const [query, setQuery] = useState("");
   const [type, setType] = useState<DeviceType | "all">("all");
   const [status, setStatus] = useState("all");
@@ -29,7 +37,7 @@ export function DeviceTable({ snapshot, onSelect }: { snapshot: EnergySnapshot; 
   const table = useReactTable({ data, columns, getCoreRowModel: getCoreRowModel(), getFilteredRowModel: getFilteredRowModel(), getSortedRowModel: getSortedRowModel() });
 
   return (
-    <div id="device-table" className="space-y-3">
+    <div id="device-table" className={cn("space-y-3", highlighted && "rounded-xl ring-2 ring-violet-500")}>
       <div className="flex flex-wrap gap-2">
         <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search devices" aria-label="Search devices" className="h-9 rounded-lg border border-zinc-300 bg-transparent px-3 text-sm dark:border-zinc-700" />
         <select value={type} onChange={(event) => setType(event.target.value as DeviceType | "all")} aria-label="Filter by type" className="h-9 rounded-lg border border-zinc-300 bg-transparent px-2 text-sm dark:border-zinc-700">
@@ -43,6 +51,20 @@ export function DeviceTable({ snapshot, onSelect }: { snapshot: EnergySnapshot; 
           <option value="error">Error</option>
           <option value="unknown">Unknown</option>
         </select>
+        <Button
+          type="button"
+          className="ml-auto"
+          onClick={() => {
+            const next = blankDeviceDraft(snapshot, type === "all" ? undefined : type);
+            if (!next) {
+              toast.error("Add a building, floor, and room on the campus map first");
+              return;
+            }
+            setDraft(next);
+          }}
+        >
+          Add device
+        </Button>
       </div>
       <div className="overflow-x-auto rounded-xl border border-zinc-200 dark:border-zinc-800">
         <table className="w-full min-w-[860px] text-left text-sm">
@@ -70,6 +92,28 @@ export function DeviceTable({ snapshot, onSelect }: { snapshot: EnergySnapshot; 
         </table>
       </div>
       <p className="text-xs text-zinc-500">{data.length} devices</p>
+      <DeviceDialog
+        draft={draft}
+        buildings={snapshot.buildings}
+        floors={snapshot.floors}
+        rooms={snapshot.rooms}
+        types={snapshot.deviceTypes}
+        onChange={setDraft}
+        onClose={() => setDraft(null)}
+        onSave={(next) => {
+          if (!next.name.trim()) {
+            toast.error("Device name is required");
+            return;
+          }
+          if (!next.roomId) {
+            toast.error("Choose a room");
+            return;
+          }
+          addDevice(deviceFromDraft(next, snapshot.demoNow));
+          toast.success("Device added");
+          setDraft(null);
+        }}
+      />
     </div>
   );
 }

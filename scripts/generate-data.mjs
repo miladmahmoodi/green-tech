@@ -9,9 +9,9 @@ const NOW = Date.parse("2026-10-04T10:30:00+04:00");
 const seen = (secondsAgo) => new Date(NOW - secondsAgo * 1000).toISOString();
 
 const buildings = [
-  { id: "main-building", campusId: "aua", name: "Main Building", code: "MB", baseloadKw: 0, areaM2: 9200 },
-  { id: "pab", campusId: "aua", name: "Paramaz Avedisian Building", code: "PAB", baseloadKw: 18.4, areaM2: 7400 },
-  { id: "akian", campusId: "aua", name: "Akian Building", code: "AK", baseloadKw: 9.6, areaM2: 3100 },
+  { id: "main-building", campusId: "aua", name: "Main Building", code: "MB", baseloadKw: 0, areaM2: 9200, location: { lat: 40.19315, lng: 44.50305 } },
+  { id: "pab", campusId: "aua", name: "Paramaz Avedisian Building", code: "PAB", baseloadKw: 18.4, areaM2: 7400, location: { lat: 40.19235, lng: 44.50415 } },
+  { id: "akian", campusId: "aua", name: "Akian Building", code: "AK", baseloadKw: 9.6, areaM2: 3100, location: { lat: 40.19185, lng: 44.50255 } },
 ];
 
 const floors = [
@@ -21,8 +21,8 @@ const floors = [
   { id: "main-floor-4", buildingId: "main-building", name: "Floor 4 · Faculty", level: 4 },
   { id: "pab-floor-1", buildingId: "pab", name: "Floor 1", level: 1 },
   { id: "pab-floor-2", buildingId: "pab", name: "Floor 2", level: 2 },
-  { id: "akian-floor-1", buildingId: "akian", name: "Floor 1 · Gallery", level: 1 },
-  { id: "akian-floor-2", buildingId: "akian", name: "Floor 2 · Reading", level: 2 },
+  { id: "akian-floor-1", buildingId: "akian", name: "Floor 1 · Gallery & Library", level: 1 },
+  { id: "akian-floor-2", buildingId: "akian", name: "Floor 2", level: 2 },
 ];
 
 const rooms = [
@@ -41,7 +41,7 @@ const rooms = [
   { id: "pab-labs", floorId: "pab-floor-2", buildingId: "pab", name: "Engineering Labs", zoneType: "lab", areaM2: 300, capacity: 40 },
   { id: "elevator-pab", floorId: "pab-floor-1", buildingId: "pab", name: "Elevator Core", zoneType: "elevator", areaM2: 18, capacity: 0 },
   { id: "gallery", floorId: "akian-floor-1", buildingId: "akian", name: "Gallery", zoneType: "common", areaM2: 400, capacity: 60 },
-  { id: "reading-room", floorId: "akian-floor-2", buildingId: "akian", name: "Reading Room", zoneType: "library", areaM2: 260, capacity: 50 },
+  { id: "reading-room", floorId: "akian-floor-1", buildingId: "akian", name: "Library", zoneType: "library", areaM2: 260, capacity: 50 },
   { id: "elevator-akian", floorId: "akian-floor-1", buildingId: "akian", name: "Elevator Core", zoneType: "elevator", areaM2: 12, capacity: 0 },
   { id: "solar-yard", floorId: "main-floor-1", buildingId: "main-building", name: "Roof Plant", zoneType: "plant", areaM2: 800, capacity: 0 },
 ];
@@ -256,7 +256,7 @@ const extraLights = [
   ["light-pab", "Lecture Hall Lights", "pab", "pab-floor-1", "pab-hall", 1.4],
   ["light-pab-labs", "Engineering Lab Lights", "pab", "pab-floor-2", "pab-labs", 0.8],
   ["light-gallery", "Gallery Lights", "akian", "akian-floor-1", "gallery", 0.7],
-  ["light-reading", "Reading Room Lights", "akian", "akian-floor-2", "reading-room", 0.55],
+  ["light-reading", "Library Lights", "akian", "akian-floor-1", "reading-room", 0.55],
 ];
 
 for (const [id, name, buildingId, floorId, roomId, powerKw] of extraLights) {
@@ -335,7 +335,7 @@ devices.push(
     name: "HVAC-Akian",
     type: "hvac",
     buildingId: "akian",
-    floorId: "akian-floor-2",
+    floorId: "akian-floor-1",
     roomId: "reading-room",
     powerKw: 3.1,
     props: { mode: "eco", setpointC: 21, currentTempC: 21.2, ecoPowerKw: 3.1, comfortPowerKw: 4.4, standbyPowerKw: 0.05, schedule: ["09:00–20:00"], expectedPowerKw: 3.0 },
@@ -1034,11 +1034,19 @@ function demandAfter(changes) {
 }
 console.log("solar surplus demand", demandAfter(scenarios[1].changes));
 
+const labInsight = insights.find((item) => item.id === "lab-204-unoccupied");
+const surplusScenario = scenarios.find((item) => item.id === "solar-surplus");
+const chargeAction = insights.find((item) => item.id === "solar-charge").plan.actions.find((action) => action.type === "set_battery");
+const peakScenario = scenarios.find((item) => item.id === "peak-price");
+const surplusDemandKw = surplusScenario.changes.demandTargetKw;
+const surplusKw = surplusScenario.changes.solar.currentKw - surplusDemandKw;
+
 const campus = {
   id: "aua",
   name: "AUA Campus",
   city: "Yerevan",
   timezone: "Asia/Yerevan",
+  location: { lat: 40.19272, lng: 44.50339 },
   todayEnergyKwh: 1284,
   todayCostUsd: 143.2,
   baselineSavingsUsd: 38.4,
@@ -1061,13 +1069,13 @@ const campus = {
     { id: "lab-empty", title: "Lab becomes unoccupied", detail: "Occupancy falls from 24 to 0. Lights, computers, and HVAC stay on.", route: "/campus/main-building/main-floor-2/lab-204", scenarioId: "lab-unoccupied", highlight: "room-summary" },
     { id: "detect", title: "Unnecessary consumption", detail: "The advisor flags the empty lab. This is waste, not a busy hour.", route: "/advisor", highlight: "insight-lab-204-unoccupied" },
     { id: "explain", title: "Why it matters", detail: "Open the explanation: what happened, why, and the cause.", route: "/advisor", highlight: "insight-lab-204-unoccupied" },
-    { id: "savings", title: "Estimated savings", detail: "$3.40 today and $102 over the month, at 94% confidence.", route: "/advisor", highlight: "insight-lab-204-unoccupied" },
+    { id: "savings", title: "Estimated savings", detail: `$${labInsight.dailySavingUsd.toFixed(2)} today and $${labInsight.monthlySavingUsd} over the month, at ${labInsight.confidence}% confidence.`, route: "/advisor", highlight: "insight-lab-204-unoccupied" },
     { id: "apply", title: "Apply the optimization", detail: "The rules engine runs the plan. Local-only Light-204-03 is skipped.", route: "/advisor", applyInsightId: "lab-204-unoccupied", highlight: "insight-lab-204-unoccupied" },
     { id: "devices", title: "Devices change state", detail: "Remote lights and inactive computers are off. HVAC-204 is in Eco.", route: "/devices", highlight: "device-table" },
     { id: "power-down", title: "Demand falls", detail: "Campus power and the energy flow both drop by the measured saving.", route: "/", highlight: "kpi-row" },
-    { id: "solar", title: "Solar surplus", detail: "Generation stays high while demand falls to 51 kW, leaving 31 kW of surplus.", route: "/solar-battery", scenarioId: "solar-surplus", highlight: "strategy-panel" },
-    { id: "charge", title: "Battery charges", detail: "Apply the charge plan. State of charge moves from 63% to 74%.", route: "/solar-battery", applyInsightId: "solar-charge", highlight: "strategy-panel" },
-    { id: "peak", title: "Peak price", detail: "The tariff moves to $0.16/kWh for 18:00–21:00.", route: "/solar-battery", scenarioId: "peak-price", highlight: "peak-panel" },
+    { id: "solar", title: "Solar surplus", detail: `Generation stays high while demand falls to ${surplusDemandKw} kW, leaving ${surplusKw} kW of surplus.`, route: "/solar-battery", scenarioId: "solar-surplus", highlight: "strategy-panel" },
+    { id: "charge", title: "Battery charges", detail: `Apply the charge plan. State of charge moves from ${surplusScenario.changes.battery.soc}% to ${chargeAction.soc}%.`, route: "/solar-battery", applyInsightId: "solar-charge", highlight: "strategy-panel" },
+    { id: "peak", title: "Peak price", detail: `The tariff moves to $${peakScenario.changes.price.currentUsdPerKwh}/kWh for ${prices.peakWindow}.`, route: "/solar-battery", scenarioId: "peak-price", highlight: "peak-panel" },
     { id: "discharge", title: "Battery supplies the building", detail: "Discharge cuts grid import and records the avoided peak cost.", route: "/solar-battery", applyInsightId: "peak-discharge", highlight: "peak-panel" },
     { id: "totals", title: "Savings for the day", detail: "Energy saved and cost avoided, with the daily and monthly projection.", route: "/", highlight: "savings-strip" },
   ],

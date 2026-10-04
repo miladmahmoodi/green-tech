@@ -15,7 +15,7 @@ export default function AdvisorPage() {
     <div className="space-y-4">
       <PageHeader title="AI advisor" description="Recommendations explain the situation. Applying them runs the optimization engine, which skips anything under local control." />
       {insights.length === 0 ? <Card className="p-4 text-sm text-zinc-500">No active recommendation. The campus is inside its expected range.</Card> : null}
-      <div className={`space-y-3 ${highlight?.startsWith("insight-") ? "" : ""}`}>
+      <div className="space-y-3">
         {insights.map((insight) => (
           <div key={insight.id} className={highlight === `insight-${insight.id}` ? "rounded-xl ring-2 ring-violet-500" : ""}>
             <RecommendationCard insight={insight} onApply={(id) => { const notes = applyInsight(id); if (notes.length === 0) toast.success("Optimization applied"); notes.forEach((note) => toast.message(note)); }} />

@@ -17,8 +17,6 @@ const CampusMap = dynamic(() => import("@/components/configuration/campus-map").
 
 const ZONES: ZoneType[] = ["lab", "classroom", "office", "administration", "common", "restroom", "library", "plant", "elevator"];
 
-type Tool = "campus" | "building" | null;
-
 function zoneLabel(zone: string): string {
   return zone.replaceAll("_", " ");
 }
@@ -33,7 +31,7 @@ export function CampusPanel() {
   const upsertRoom = useEnergyStore((state) => state.upsertRoom);
   const removeRoom = useEnergyStore((state) => state.removeRoom);
 
-  const [tool, setTool] = useState<Tool>(null);
+  const [mark, setMark] = useState<GeoPoint | null>(null);
   const [campusOpen, setCampusOpen] = useState(false);
   const [campusPoint, setCampusPoint] = useState<GeoPoint | null>(null);
   const [building, setBuilding] = useState<Building | null>(null);
@@ -51,32 +49,30 @@ export function CampusPanel() {
   const openCampus = (point: GeoPoint | null) => {
     setCampusPoint(point ?? snapshot.campus.location);
     setCampusOpen(true);
-    setTool(null);
+    setMark(null);
   };
 
   const openBuilding = (next: Building) => {
     setBuilding(next);
     setFloor(null);
     setRoom(null);
-    setTool(null);
+    setMark(null);
   };
 
-  const place = (point: GeoPoint) => {
-    if (tool === "campus") {
+  const useMark = (kind: "campus" | "building", point: GeoPoint) => {
+    if (kind === "campus") {
       openCampus(point);
       return;
     }
-    if (tool === "building") {
-      openBuilding({
-        id: `building-${Date.now()}`,
-        campusId: snapshot.campus.id,
-        name: "",
-        code: "",
-        baseloadKw: 0,
-        areaM2: 0,
-        location: point,
-      });
-    }
+    openBuilding({
+      id: `building-${Date.now()}`,
+      campusId: snapshot.campus.id,
+      name: "",
+      code: "",
+      baseloadKw: 0,
+      areaM2: 0,
+      location: point,
+    });
   };
 
   const saveBuilding = (next: Building) => {
@@ -92,26 +88,17 @@ export function CampusPanel() {
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-wrap items-center gap-2">
-        <Button type="button" variant={tool === "campus" ? "default" : "outline"} onClick={() => setTool(tool === "campus" ? null : "campus")}>
-          Place campus pin
-        </Button>
-        <Button type="button" variant={tool === "building" ? "default" : "outline"} onClick={() => setTool(tool === "building" ? null : "building")}>
-          Place building pin
-        </Button>
-        <p className="text-sm text-zinc-500">
-          {tool === "campus" ? "Click the map to set the campus marker." : tool === "building" ? "Click the map to add a building." : "Click a marker to edit it. Violet is the campus, green is a building."}
-        </p>
-      </div>
+      <p className="text-sm text-zinc-500">Click the map to mark a location. Violet is the campus, green is a building.</p>
       <div className="overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800">
         <CampusMap
           campus={snapshot.campus}
           buildings={mapBuildings}
           campusDraft={campusOpen ? campusPoint : null}
-          placing={tool !== null}
-          onMapClick={place}
+          mark={mark}
+          onMapClick={setMark}
           onCampusClick={() => openCampus(snapshot.campus.location)}
           onBuildingClick={openBuilding}
+          onUseMark={useMark}
         />
       </div>
       <div className="grid gap-3 md:grid-cols-2">
