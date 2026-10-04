@@ -1,5 +1,6 @@
 import { Providers } from "@/components/layout/providers";
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={`dark ${geistSans.variable} ${geistMono.variable}`} suppressHydrationWarning>
       <body className="antialiased">
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );
