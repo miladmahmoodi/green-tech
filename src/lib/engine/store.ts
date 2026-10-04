@@ -1,9 +1,9 @@
 "use client";
 
 import { mockDataProvider } from "@/lib/mock-data";
-import { applyScenario, derive, loadSnapshot, matchesAll, runPlan, type EnergySnapshot } from "@/lib/engine/model";
+import { applyScenario, derive, loadSnapshot, matchesAll, pricesFromTariff, runPlan, type EnergySnapshot } from "@/lib/engine/model";
 import { activeInsights } from "@/lib/engine/views";
-import type { AutomationRule, Device, DevicePatch, EnergyPrices } from "@/types/energy";
+import type { AutomationRule, Building, Campus, CatalogType, Device, DevicePatch, EnergyPrices, Floor, Room, Schedule, Tariff } from "@/types/energy";
 import { create } from "zustand";
 
 interface EnergyStore extends EnergySnapshot {
@@ -13,6 +13,22 @@ interface EnergyStore extends EnergySnapshot {
   applyInsight: (id: string) => string[];
   setDevice: (id: string, patch: DevicePatch) => string | null;
   addDevice: (device: Device) => void;
+  replaceDevice: (device: Device) => void;
+  removeDevice: (id: string) => void;
+  updateCampus: (patch: Partial<Campus>) => void;
+  upsertBuilding: (building: Building) => void;
+  removeBuilding: (id: string) => string | null;
+  upsertFloor: (floor: Floor) => void;
+  removeFloor: (id: string) => string | null;
+  upsertRoom: (room: Room) => void;
+  removeRoom: (id: string) => string | null;
+  upsertDeviceType: (record: CatalogType) => void;
+  removeDeviceType: (id: string) => string | null;
+  upsertTariff: (tariff: Tariff) => void;
+  removeTariff: (id: string) => string | null;
+  activateTariff: (id: string) => void;
+  upsertSchedule: (schedule: Schedule) => void;
+  removeSchedule: (id: string) => void;
   updatePrices: (patch: Partial<EnergyPrices>) => void;
   toggleRule: (id: string) => void;
   addRule: (rule: AutomationRule) => void;
@@ -32,6 +48,22 @@ const STORE_ACTIONS = [
   "applyInsight",
   "setDevice",
   "addDevice",
+  "replaceDevice",
+  "removeDevice",
+  "updateCampus",
+  "upsertBuilding",
+  "removeBuilding",
+  "upsertFloor",
+  "removeFloor",
+  "upsertRoom",
+  "removeRoom",
+  "upsertDeviceType",
+  "removeDeviceType",
+  "upsertTariff",
+  "removeTariff",
+  "activateTariff",
+  "upsertSchedule",
+  "removeSchedule",
   "updatePrices",
   "toggleRule",
   "addRule",
@@ -123,7 +155,121 @@ export const useEnergyStore = create<EnergyStore>((set, get) => ({
     return null;
   },
   addDevice: (device) => set({ devices: [...get().devices, device] }),
-  updatePrices: (patch) => set({ prices: { ...get().prices, ...patch } }),
+  replaceDevice: (device) =>
+    set({
+      devices: get().devices.some((item) => item.id === device.id)
+        ? get().devices.map((item) => (item.id === device.id ? device : item))
+        : [...get().devices, device],
+    }),
+  removeDevice: (id) => set({ devices: get().devices.filter((item) => item.id !== id) }),
+  updateCampus: (patch) => set({ campus: { ...get().campus, ...patch, context: patch.context ?? get().campus.context } }),
+  upsertBuilding: (building) =>
+    set({
+      buildings: get().buildings.some((item) => item.id === building.id)
+        ? get().buildings.map((item) => (item.id === building.id ? building : item))
+        : [...get().buildings, building],
+    }),
+  removeBuilding: (id) => {
+    if (get().devices.some((device) => device.buildingId === id)) return "Move or delete devices in this building first.";
+    set({
+      buildings: get().buildings.filter((item) => item.id !== id),
+      floors: get().floors.filter((item) => item.buildingId !== id),
+      rooms: get().rooms.filter((item) => item.buildingId !== id),
+    });
+    return null;
+  },
+  upsertFloor: (floor) =>
+    set({
+      floors: get().floors.some((item) => item.id === floor.id)
+        ? get().floors.map((item) => (item.id === floor.id ? floor : item))
+        : [...get().floors, floor],
+    }),
+  removeFloor: (id) => {
+    if (get().devices.some((device) => device.floorId === id)) return "Move or delete devices on this floor first.";
+    set({
+      floors: get().floors.filter((item) => item.id !== id),
+      rooms: get().rooms.filter((item) => item.floorId !== id),
+    });
+    return null;
+  },
+  upsertRoom: (room) =>
+    set({
+      rooms: get().rooms.some((item) => item.id === room.id)
+        ? get().rooms.map((item) => (item.id === room.id ? room : item))
+        : [...get().rooms, room],
+    }),
+  removeRoom: (id) => {
+    if (get().devices.some((device) => device.roomId === id)) return "Move or delete devices in this room first.";
+    set({
+      rooms: get().rooms.filter((item) => item.id !== id),
+      occupancy: get().occupancy.filter((item) => item.roomId !== id),
+    });
+    return null;
+  },
+  upsertDeviceType: (record) =>
+    set({
+      deviceTypes: get().deviceTypes.some((item) => item.id === record.id)
+        ? get().deviceTypes.map((item) => (item.id === record.id ? record : item))
+        : [...get().deviceTypes, record],
+    }),
+  removeDeviceType: (id) => {
+    if (get().devices.some((device) => device.type === id)) return "Devices still use this type.";
+    if (get().deviceTypes.length <= 1) return "Keep at least one device type.";
+    set({ deviceTypes: get().deviceTypes.filter((item) => item.id !== id) });
+    return null;
+  },
+  upsertTariff: (tariff) => {
+    const tariffs = get().tariffs.some((item) => item.id === tariff.id)
+      ? get().tariffs.map((item) => (item.id === tariff.id ? tariff : item.active && tariff.active ? { ...item, active: false } : item))
+      : [...get().tariffs.map((item) => (tariff.active ? { ...item, active: false } : item)), tariff];
+    const active = tariffs.find((item) => item.active);
+    set({
+      tariffs,
+      prices: active ? pricesFromTariff(get().prices, active) : get().prices,
+    });
+  },
+  removeTariff: (id) => {
+    const current = get().tariffs.find((item) => item.id === id);
+    if (!current) return "Tariff not found.";
+    const rest = get().tariffs.filter((item) => item.id !== id);
+    if (rest.length === 0) return "Keep at least one tariff.";
+    const tariffs = current.active ? rest.map((item, index) => ({ ...item, active: index === 0 })) : rest;
+    const active = tariffs.find((item) => item.active) ?? tariffs[0];
+    set({ tariffs: tariffs.map((item) => ({ ...item, active: item.id === active.id })), prices: pricesFromTariff(get().prices, active) });
+    return null;
+  },
+  activateTariff: (id) => {
+    const tariff = get().tariffs.find((item) => item.id === id);
+    if (!tariff) return;
+    set({
+      tariffs: get().tariffs.map((item) => ({ ...item, active: item.id === id })),
+      prices: pricesFromTariff(get().prices, { ...tariff, active: true }),
+    });
+  },
+  upsertSchedule: (schedule) =>
+    set({
+      schedules: get().schedules.some((item) => item.id === schedule.id)
+        ? get().schedules.map((item) => (item.id === schedule.id ? schedule : item))
+        : [...get().schedules, schedule],
+    }),
+  removeSchedule: (id) => set({ schedules: get().schedules.filter((item) => item.id !== id) }),
+  updatePrices: (patch) => {
+    const prices = { ...get().prices, ...patch };
+    set({
+      prices,
+      tariffs: get().tariffs.map((tariff) =>
+        tariff.active
+          ? {
+              ...tariff,
+              ...(patch.currentUsdPerKwh !== undefined ? { currentUsdPerKwh: patch.currentUsdPerKwh } : {}),
+              ...(patch.offPeakUsdPerKwh !== undefined ? { offPeakUsdPerKwh: patch.offPeakUsdPerKwh } : {}),
+              ...(patch.peakUsdPerKwh !== undefined ? { peakUsdPerKwh: patch.peakUsdPerKwh } : {}),
+              ...(patch.peakWindow !== undefined ? { peakWindow: patch.peakWindow } : {}),
+            }
+          : tariff,
+      ),
+    });
+  },
   toggleRule: (id) =>
     set({
       rules: get().rules.map((rule) => (rule.id === id ? { ...rule, enabled: !rule.enabled } : rule)),

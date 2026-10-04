@@ -5,7 +5,8 @@
     "name": "Main Building",
     "code": "MB",
     "baseloadKw": 38.04,
-    "areaM2": 9200
+    "areaM2": 9200,
+    "location": { "lat": 40.19315, "lng": 44.50305 }
   },
   {
     "id": "pab",
@@ -13,7 +14,8 @@
     "name": "Paramaz Avedisian Building",
     "code": "PAB",
     "baseloadKw": 18.4,
-    "areaM2": 7400
+    "areaM2": 7400,
+    "location": { "lat": 40.19235, "lng": 44.50415 }
   },
   {
     "id": "akian",
@@ -21,6 +23,7 @@
     "name": "Akian Building",
     "code": "AK",
     "baseloadKw": 9.6,
-    "areaM2": 3100
+    "areaM2": 3100,
+    "location": { "lat": 40.19185, "lng": 44.50255 }
   }
 ]

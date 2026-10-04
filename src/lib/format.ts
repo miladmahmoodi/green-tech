@@ -44,7 +44,14 @@ export function formatClock(iso: string): string {
   }).format(new Date(iso));
 }
 
+let deviceTypeCatalog: Record<string, string> = {};
+
+export function setDeviceTypeCatalog(records: { id: string; label: string }[]): void {
+  deviceTypeCatalog = Object.fromEntries(records.map((record) => [record.id, record.label]));
+}
+
 export function deviceTypeLabel(type: string): string {
+  if (deviceTypeCatalog[type]) return deviceTypeCatalog[type];
   const labels: Record<string, string> = {
     electricity_meter: "Meter",
     lighting: "Lighting",

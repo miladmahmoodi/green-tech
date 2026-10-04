@@ -72,11 +72,32 @@ export interface DemoStoryStep {
   highlight?: string;
 }
 
+export interface GeoPoint {
+  lat: number;
+  lng: number;
+}
+
+export interface CatalogType {
+  id: string;
+  label: string;
+}
+
+export interface Tariff {
+  id: string;
+  name: string;
+  offPeakUsdPerKwh: number;
+  peakUsdPerKwh: number;
+  peakWindow: string;
+  currentUsdPerKwh: number;
+  active: boolean;
+}
+
 export interface Campus {
   id: string;
   name: string;
   city: string;
   timezone: string;
+  location: GeoPoint | null;
   todayEnergyKwh: number;
   todayCostUsd: number;
   baselineSavingsUsd: number;
@@ -94,6 +115,7 @@ export interface Building {
   /** Unmetered load that is not represented by individual devices. */
   baseloadKw: number;
   areaM2: number;
+  location: GeoPoint | null;
 }
 
 export interface Floor {

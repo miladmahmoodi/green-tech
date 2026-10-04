@@ -52,3 +52,14 @@ body {
     #27272a 12px
   );
 }
+
+.leaflet-container {
+  z-index: 0;
+  background: #18181b;
+  font-family: inherit;
+}
+
+.leaflet-container img {
+  max-width: none !important;
+  max-height: none !important;
+}

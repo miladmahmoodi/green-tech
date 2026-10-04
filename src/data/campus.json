@@ -3,6 +3,7 @@
   "name": "AUA Campus",
   "city": "Yerevan",
   "timezone": "Asia/Yerevan",
+  "location": { "lat": 40.19272, "lng": 44.50339 },
   "todayEnergyKwh": 1284,
   "todayCostUsd": 143.2,
   "baselineSavingsUsd": 38.4,

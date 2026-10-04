@@ -5,6 +5,7 @@ import type {
   BatterySystem,
   Building,
   Campus,
+  CatalogType,
   Condition,
   Device,
   DevicePatch,
@@ -16,11 +17,52 @@ import type {
   SavingsEntry,
   Scenario,
   ScenarioChanges,
+  Schedule,
   SkippedCommand,
   SolarSystem,
+  Tariff,
 } from "@/types/energy";
 
 export const DEMO_START = "2026-10-04T06:30:00.000Z";
+
+export const DEFAULT_DEVICE_TYPES: CatalogType[] = [
+  { id: "lighting", label: "Lighting" },
+  { id: "hvac", label: "HVAC" },
+  { id: "heating", label: "Heating" },
+  { id: "cooling", label: "Cooling" },
+  { id: "computer", label: "Computer" },
+  { id: "smart_plug", label: "Smart Plug" },
+  { id: "water_heater", label: "Water Heater" },
+  { id: "elevator", label: "Elevator" },
+  { id: "electricity_meter", label: "Meter" },
+  { id: "solar_panel", label: "Solar" },
+  { id: "solar_inverter", label: "Inverter" },
+  { id: "battery", label: "Battery" },
+];
+
+export function seedTariffs(prices: EnergyPrices): Tariff[] {
+  return [
+    {
+      id: "campus-tariff",
+      name: "Campus tariff",
+      offPeakUsdPerKwh: prices.offPeakUsdPerKwh,
+      peakUsdPerKwh: prices.peakUsdPerKwh,
+      peakWindow: prices.peakWindow,
+      currentUsdPerKwh: prices.currentUsdPerKwh,
+      active: true,
+    },
+  ];
+}
+
+export function pricesFromTariff(prices: EnergyPrices, tariff: Tariff): EnergyPrices {
+  return {
+    ...prices,
+    offPeakUsdPerKwh: tariff.offPeakUsdPerKwh,
+    peakUsdPerKwh: tariff.peakUsdPerKwh,
+    peakWindow: tariff.peakWindow,
+    currentUsdPerKwh: tariff.currentUsdPerKwh,
+  };
+}
 
 export interface EnergySnapshot {
   campus: Campus;
@@ -28,6 +70,9 @@ export interface EnergySnapshot {
   floors: Floor[];
   rooms: Room[];
   devices: Device[];
+  deviceTypes: CatalogType[];
+  tariffs: Tariff[];
+  schedules: Schedule[];
   occupancy: OccupancyRecord[];
   rules: AutomationRule[];
   prices: EnergyPrices;
@@ -83,6 +128,9 @@ export function loadSnapshot(): EnergySnapshot {
     floors: provider.getFloors(),
     rooms: provider.getRooms(),
     devices: provider.getDevices(),
+    deviceTypes: DEFAULT_DEVICE_TYPES.map((item) => ({ ...item })),
+    tariffs: seedTariffs(provider.getEnergyPrices()),
+    schedules: provider.getSchedules(),
     occupancy: provider.getOccupancy(),
     rules: provider.getAutomationRules(),
     prices: provider.getEnergyPrices(),
